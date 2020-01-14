@@ -16,7 +16,7 @@ kubectl -n bookinfo create secret generic icam-server-secret \
 --from-file=keyfiles/keyfile.p12 \
 --from-file=keyfiles/keyfile.kdb \
 --from-file=global.environment
-
+```
 3. Edit the **environment** label of the cluster in ICAM UI to value **Production**
 
 ![](images/2020-01-14-23-00-57.png)

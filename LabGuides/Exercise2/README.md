@@ -59,7 +59,7 @@ icam-kubernetes-resources-k8monitor-54876594c5-9xvzs   2/2     Running   0      
 
 You should see the several Kuberenetes resources. Feel free to explore what data is shown for different resource types. This concludes the exercise.
 
-[Go back to the Table of Content](../Exercise0/README.md)
+[Go back to the Table of Content](../../README.md)
 
 <table>
   <tr>

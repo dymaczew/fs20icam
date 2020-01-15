@@ -77,7 +77,7 @@ ibm-multicluster-endpoint-operator-854f9b7cbb-jscjk   1/1     Running           
 
 This concludes the exercise.
 
-[Go back to the Table of Content](../Exercise0/README.md)
+[Go back to the Table of Content](../../README.md)
 
 <table>
   <tr>

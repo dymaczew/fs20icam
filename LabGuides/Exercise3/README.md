@@ -31,7 +31,7 @@ kubectl get pods -n bookinfo
 
 This conludes the exercise.
 
-[Go back to the Table of Content](../Exercise0/README.md)
+[Go back to the Table of Content](../../README.md)
 
 <table>
   <tr>

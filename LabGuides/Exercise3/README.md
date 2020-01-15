@@ -28,3 +28,22 @@ kubectl -n bookinfo create secret generic icam-server-secret \
 ```
 kubectl get pods -n bookinfo
 ```
+
+This conludes the exercise.
+
+[Go back to the Table of Content](../Exercise0/README.md)
+
+<table>
+  <tr>
+    <td>Version</td>
+    <td>1.0</td>
+  </tr>
+  <tr>
+    <td>Author</td>
+    <td>Wlodek Dymaczewski, IBM</td>
+  </tr>
+  <tr>
+    <td>email</td>
+    <td>dymaczewski@pl.ibm.com</td>
+  </tr>
+</table>

@@ -75,7 +75,9 @@ ibm-multicluster-endpoint-operator-854f9b7cbb-jscjk   1/1     Running           
     
 ![](images/2020-01-11-15-43-48.png)
 
-This concludes the exercise
+This concludes the exercise.
+
+[Go back to the Table of Content](../Exercise0/README.md)
 
 <table>
   <tr>
@@ -87,7 +89,7 @@ This concludes the exercise
     <td>Wlodek Dymaczewski, IBM</td>
   </tr>
   <tr>
-    <td>email:</td>
+    <td>email</td>
     <td>dymaczewski@pl.ibm.com</td>
   </tr>
 </table>

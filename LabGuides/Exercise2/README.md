@@ -32,6 +32,8 @@ scp -P <port> ibm-cloud-apm-dc-configpack.tar  localuser@services-uscentral.skyt
 ```
 
 8. In the terminal window where you are logged in to managed cluster run the following commands, adjusting the **cluster_name** value
+   
+**ATTENTION: Remember to change the cluster_name in the command!**   
 <pre>
 cd install/app_mgmt_k8sdc
 ansible-playbook helm-main.yaml --extra-vars="<b>cluster_name=user1</b> release_name=icam-kubernetes-resources \
@@ -44,7 +46,7 @@ PLAY RECAP *********************************************************************
 127.0.0.1                  : ok=15   changed=8    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
 ```
 
-9. Verify that the K8Monitor is running
+1. Verify that the K8Monitor is running
 ```
 localuser@edge-server:~/install/app_mgmt_k8sdc$ kubectl get pod -n default
 NAME                                                   READY   STATUS    RESTARTS   AGE
@@ -55,4 +57,19 @@ icam-kubernetes-resources-k8monitor-54876594c5-9xvzs   2/2     Running   0      
 
 ![](images/2020-01-11-17-25-42.png)
 
-You should see the several Kuberenetes resources. Feel free to explore what data is shown for different resource types. This consludes this exercise
+You should see the several Kuberenetes resources. Feel free to explore what data is shown for different resource types. This concludes the exercise
+
+<table>
+  <tr>
+    <td>Version</td>
+    <td>1.0</td>
+  </tr>
+  <tr>
+    <td>Author</td>
+    <td>Wlodek Dymaczewski, IBM</td>
+  </tr>
+  <tr>
+    <td>email:</td>
+    <td>dymaczewski@pl.ibm.com</td>
+  </tr>
+</table>

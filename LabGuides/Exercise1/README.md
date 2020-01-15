@@ -2,7 +2,7 @@
 
 ## Login to IBM CloudPak for Multicloud Management console
 
-1. On you workstation open a browser and point it to https://https://icp-console.apps.169.61.23.248.nip.io
+1. On you workstation open a browser and point it to https://icp-console.apps.169.61.23.248.nip.io
 
 2. Login with the credentials given you by the instructors
 
@@ -37,6 +37,14 @@
 
 ![](images/2020-01-11-13-32-13.png)
 
+If you see the following error
+```
+error: unable to recognize "STDIN": no matches for kind "Endpoint" in version "multicloud.ibm.com/v1beta1"
+```
+just apply the command again.
+
+*EXPLANATION: First resource being created registers new API Endpoint "multicloud.ibm.com/v1beta1". Last resource uses this API. In case the last resource is processes before the first one is completed (Kubernetes Controllers work asynchronously) this may happen.* 
+
 9. Observe the multicluster-endpoint being deployed running the following command
 ```
 kubectl get pods -n multicluster-endpoint
@@ -68,3 +76,18 @@ ibm-multicluster-endpoint-operator-854f9b7cbb-jscjk   1/1     Running           
 ![](images/2020-01-11-15-43-48.png)
 
 This concludes the exercise
+
+<table>
+  <tr>
+    <td>Version</td>
+    <td>1.0</td>
+  </tr>
+  <tr>
+    <td>Author</td>
+    <td>Wlodek Dymaczewski, IBM</td>
+  </tr>
+  <tr>
+    <td>email:</td>
+    <td>dymaczewski@pl.ibm.com</td>
+  </tr>
+</table>

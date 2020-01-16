@@ -1,5 +1,7 @@
 # Exercisae 4 Installing and configuring a Synthetics PoP
 
+[Go back to the Table of Content](../../README.md)
+
 Knowledge center reference: https://www.ibm.com/support/knowledgecenter/en/SS8G7U_19.4.0/com.ibm.app.mgmt.doc/content/dc_synthetics_intro.html?cp=SSFC4F_1.2.0
 
 ### 1. In the terminal window, where you are logged in to the managed cluster, run the following commands:

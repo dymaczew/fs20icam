@@ -1,26 +1,28 @@
 # Exercise 1 Adding a managed cluster
 
+[Go back to the Table of Content](../../README.md)
+
 ## Login to IBM CloudPak for Multicloud Management console
 
-1. On you workstation open a browser and point it to https://icp-console.apps.169.61.23.248.nip.io
+### 1. On you workstation open a browser and point it to https://icp-console.apps.169.61.23.248.nip.io
 
-2. Login with the credentials given you by the instructors
+### 2. Login with the credentials given you by the instructors
 
 ![](images/2020-01-11-12-47-43.png)
 
-3. Open **Menu**, then **Automate infrastructure** then **Clusters**
+### 3. Open **Menu**, then **Automate infrastructure** then **Clusters**
 
 ![](images/2020-01-11-13-07-46.png)
 
-4. Click **Add cluster**
+### 4. Click **Add cluster**
 
 ![](images/2020-01-11-13-11-46.png)
 
-5. Pick the **Import** option and click **Select**
+### 5. Pick the **Import** option and click **Select**
 
 ![](images/2020-01-11-13-20-07.png)
 
-6. Provide the cluster name corresponding to your userid. Edit the **Cluster import YAML file** to uncomment ```environment``` and ```region``` clusterLabels as shown below. Disable prometheusIntegration
+### 6. Provide the cluster name corresponding to your userid. Edit the **Cluster import YAML file** to uncomment ```environment``` and ```region``` clusterLabels as shown below. Disable prometheusIntegration
 ```
    prometheusIntegration:
      enabled: false
@@ -29,11 +31,11 @@
 
    Then click **Generate command**
 
-7. Click the copy icon next to the generated command
+### 7. Click the copy icon next to the generated command
 
 ![](images/2020-01-11-13-27-39.png)
 
-8. Paste the command in the terminal window where you are logged in to the managed-cluster environment
+### 8. Paste the command in the terminal window where you are logged in to the managed-cluster environment
 
 ![](images/2020-01-11-13-32-13.png)
 
@@ -45,7 +47,7 @@ just apply the command again.
 
 *EXPLANATION: First resource being created registers new API Endpoint "multicloud.ibm.com/v1beta1". Last resource uses this API. In case the last resource is processes before the first one is completed (Kubernetes Controllers work asynchronously) this may happen.* 
 
-9. Observe the multicluster-endpoint being deployed running the following command
+### 9. Observe the multicluster-endpoint being deployed running the following command
 ```
 kubectl get pods -n multicluster-endpoint
 ```
@@ -67,11 +69,11 @@ endpoint-workmgr-54987c7fdb-9dxxn                     1/1     Running           
 ibm-multicluster-endpoint-operator-854f9b7cbb-jscjk   1/1     Running             1          3d19h
 ```
 
-10.  Go back to the browser window. Click **View Cluster** to open a cluster details. 
+### 10.  Go back to the browser window. Click **View Cluster** to open a cluster details. 
 
 ![](images/2020-01-13-12-33-16.png)
 
-11.  If registration was successful you should see the similar view
+### 11.  If registration was successful you should see the similar view
     
 ![](images/2020-01-11-15-43-48.png)
 

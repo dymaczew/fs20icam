@@ -1,6 +1,6 @@
 # Accessing the lab environment
 
-Version 1.0     Author: Wlodek Dymaczewski, IBM
+[Go back to the Table of Content](../../README.md)
 
 For the FastStart 2020 labs related to the IBM Cloud Pak for Multicloud Management - IBM Cloud App Management component you will be using the central Hub server installed in IBM Cloud and the managed cluster that will run in Skytap.
 
@@ -46,6 +46,19 @@ For Windows use WinSCP or equivalent tool
 
 [Go back to the Table of Content](../../README.md)
 
-
+<table>
+  <tr>
+    <td>Version</td>
+    <td>1.0</td>
+  </tr>
+  <tr>
+    <td>Author</td>
+    <td>Wlodek Dymaczewski, IBM</td>
+  </tr>
+  <tr>
+    <td>email</td>
+    <td>dymaczewski@pl.ibm.com</td>
+  </tr>
+</table>
 
 

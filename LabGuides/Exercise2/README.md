@@ -54,12 +54,7 @@ localuser@edge-server:~/install/app_mgmt_k8sdc$ kubectl get pod -n default
 NAME                                                   READY   STATUS    RESTARTS   AGE
 icam-kubernetes-resources-k8monitor-54876594c5-9xvzs   2/2     Running   0          48s
 ```
-
-### 10. Go back to the browser with the IBM Cloud App Management UI. Click the **Resources** tab
-
-![](images/2020-01-11-17-25-42.png)
-
-You should see the several Kuberenetes resources. Feel free to explore what data is shown for different resource types. This concludes the exercise.
+This concludes the exercise.
 
 [Go back to the Table of Content](../../README.md)
 

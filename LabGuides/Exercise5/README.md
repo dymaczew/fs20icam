@@ -95,6 +95,10 @@ spec:
     spec:
       containers:
         <b>- env:
+          - name: KNJ_LOG_TO_FILE
+            value: "true"
+          - name: KNJ_LOG_LEVEL
+            value: "debug"        
           - name: OPENTRACING_ENABLED
             value: "true"
           - name: JAEGER_SAMPLER_TYPE
@@ -131,6 +135,8 @@ spec:
           secretName: icam-server-secret</b>
 </pre>
 
+Parts marked in **bold** instruct the data collector where to get the ICAM configuration information from, and how much of the traffic should be sampled (in percent). Value 1 of JAEGER_SAMPLER_PARAM and LATENCY_SAMPLER_PARAM means that all the request should be measured, which makes sense only in test/demo environments.
+
 Create the deployment using kubectl
 ```
 kubectl create -f deployment.yaml 
@@ -138,4 +144,41 @@ kubectl create -f deployment.yaml
 service/newapp created
 deployment.apps/newapp created
 ```
+
+### 4. Generate some traffic to the microservice
+
+The data collector aggregates collected data over a period of time and sends data based on the incomming traffic. In order to see the results in IBM Cloud App Management UI you need to generate some traffic against the service. You can define a synthetics test as in [Exercise 4 Installing and configuring a Synthetics PoP](../Exercise4/README.md) or follow the procedure below.
+
+Run the following commands
+```
+CLUSTER_IP=`kubectl get svc  -n default |grep newapp| awk '{print $3}'`
+while true
+do
+curl http://$CLUSTER_IP:3000
+curl http://$CLUSTER_IP:3000
+curl http://$CLUSTER_IP:3000
+curl http://$CLUSTER_IP:3000
+curl http://$CLUSTER_IP:3000
+curl http://$CLUSTER_IP:3000
+sleep 1
+done
+```
+
+Let the command run for 2-3 minutes
+
+### 5. Check the results in IBM Cloud App Management UI
+
+Go back to the browser window with the IBM Cloud App Management UI. Click the Resource tab. On the Resource tab type *service* in **Search** field as shown below. Click on the **Kubernetes service** resource type.
+
+![](images/2020-01-16-19-22-27.png)
+
+On the next screen click the **newapp** service.
+
+![](images/2020-01-16-19-24-20.png)
+
+You can see that data reported by NodeJS data collector embedded in newapp microservice are propagated and presented as Golden Signals at the newapp service level.
+
+![](images/2020-01-16-19-27-19.png)
+
+It may take a while until data actually shows in UI as some of the data are aggregated in the background and presented after as specific period - eg. 5 minutes.
 

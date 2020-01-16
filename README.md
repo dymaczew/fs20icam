@@ -16,6 +16,10 @@ Please provide any feedback via the Event mobile app or via mail/slack to the la
 
 [Exercise 5 Instrumenting a new microservice using Appsody](./LabGuides/Exercise5/README.md)
 
+[Exercise 6 Exploring Kubernetes Resources and Dashboards](./LabGuides/Exercise6/README.md)
+
+[Exercise 7 Creating a custom Event Policy, Incident Policy, and Threshold](./LabGuides/Exercise7/README.md)
+
 
 <table>
   <tr>

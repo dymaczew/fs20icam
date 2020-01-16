@@ -14,6 +14,7 @@ Please provide any feedback via the Event mobile app or via mail/slack to the la
 
 [Exercise 4 Installing and configuring a Synthetics PoP](./LabGuides/Exercise4/README.md)
 
+[Exercise 5 Instrumenting a new microservice using Appsody](./LabGuides/Exercise5/README.md)
 
 
 <table>

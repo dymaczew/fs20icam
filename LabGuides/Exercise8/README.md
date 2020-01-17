@@ -20,7 +20,7 @@ In the window that opens give your group a name (no spaces allowed) and descript
 
 ![](images/2020-01-17-07-58-22.png)
 
-Scroll down to the next section titled “Select tags for form group”. In the Filters window, scroll down to the botton and select the “Node Application Runtime”, and in the window to the right you will see all  the corresponding resrouces. There is only one in this case so select that.  Next select the "Python Node Runtime" and then select the corresponding resource.  You will see a pop up window that lists all of the resources you have selected.
+Scroll down to the next section titled “Select tags for form group”. In the Filters window, scroll down to the botton and select the “Node Application Runtime”, and in the window to the right you will see all  the corresponding resrouces. There is only one in this case so select that.  Next select the "Python Application Runtime" and then select the corresponding resource.  You will see a pop up window that lists all of the resources you have selected.
 
 ![](images/2020-01-17-08-07-36.png)
 

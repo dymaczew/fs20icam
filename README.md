@@ -26,6 +26,8 @@ Please provide any feedback via the Event mobile app or via mail/slack to the la
 
 [Exercise 10 Creating a Runbook](./LabGuides/Exercise10/README.md)
 
+[Exercise 11 Exploring Integrations](./LabGuides/Exercise11/README.md)
+
 
 <table>
   <tr>

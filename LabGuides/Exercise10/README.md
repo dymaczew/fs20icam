@@ -76,9 +76,9 @@ Next add a description to Step 1 and then click “Add command” and enter su -
 
 For Step 2 we will log in to Openshift.  After adding a description you will need to add another “Add command” action.  Enter this command:
 
-Type:  oc login -u <username> -p <password>
+Type:  oc login -u username -p password
 
-Where <username> and <password> are the parameters you defined.  To add the username and password parameters, drag them from the menu on the right, using the 6 dots next to the name, and drop them onto the command line. 
+Where username and password are the parameters you defined.  To add the username and password parameters, drag them from the menu on the right, using the 6 dots next to the name, and drop them onto the command line. 
 
 ![](images/2020-01-17-14-10-44.png)
 

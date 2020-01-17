@@ -22,6 +22,8 @@ Please provide any feedback via the Event mobile app or via mail/slack to the la
 
 [Exercise 8 Creating a Resource Group](./LabGuides/Exercise8/README.md)
 
+[Exercise 9 Exploring Thresholds](./LabGuides/Exercise9/README.md)
+
 
 <table>
   <tr>

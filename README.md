@@ -24,6 +24,8 @@ Please provide any feedback via the Event mobile app or via mail/slack to the la
 
 [Exercise 9 Exploring Thresholds](./LabGuides/Exercise9/README.md)
 
+[Exercise 10 Creating a Runbook](./LabGuides/Exercise10/README.md)
+
 
 <table>
   <tr>

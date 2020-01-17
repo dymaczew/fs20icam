@@ -1,4 +1,4 @@
-# Exercise 7 Creating a Resource Group
+# Exercise 8 Creating a Resource Group
 
 [Go back to the Table of Content](../../README.md)
 

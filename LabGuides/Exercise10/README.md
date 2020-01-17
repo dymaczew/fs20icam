@@ -27,18 +27,18 @@ Once there, click on the Runbooks tile:
 
 On the Runbooks page you will be on the Library tab and you will see several example runbooks that come with ICAM out of the box. You are free to enable, customize and use these in your own environment if you so choose.  The other tabs available are Execution, Automation, Triggers and Connections.  We will not be working with these functions, but they are defined below.
 
-•	Execution
+### Execution
   This is where you can find all runbooks that have been started, including runbooks that are in progress.
 
-•	Automations
+### Automations
   In runbooks, an automation is the collection of several manual actions into a single automated entity. Automations use the parameters of the runbook and you can customize the parameters for the execution of the runbook which will lower the time needed for the execution. Automations eliminate the risk of manual errors that you get repeating the same steps many times.
 
-•	Triggers
+### Triggers
   If you have events that always correspond to the same runbook you can create a trigger and link the event with the runbook. Triggers can run with manual and automated runbooks. If the runbook is a manual or semi-automated runbook, the operator must complete the parameter values. If the runbook is fully automated, the trigger runs with pre-defined values. The operator does not even notice that the runbook was executed.
 
   You must install Netcool/Impact to run the trigger service.
 
-•	Connections
+### Connections
   Runbooks can connect to your target endpoints, for example your on-premise back-end system. To trigger runbook executions from incoming events, set up a trigger connection. The connections currently available are Ansible Tower, BigFix, Omnibus/Impact, and a script.
 
 ![](images/2020-01-17-10-52-36.png)

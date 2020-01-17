@@ -20,6 +20,8 @@ Please provide any feedback via the Event mobile app or via mail/slack to the la
 
 [Exercise 7 Creating a custom Event Policy, Incident Policy, and Threshold](./LabGuides/Exercise7/README.md)
 
+[Exercise 8 Creating a Resource Group](./LabGuides/Exercise8/README.md)
+
 
 <table>
   <tr>

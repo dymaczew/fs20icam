@@ -182,3 +182,21 @@ You can see that data reported by NodeJS data collector embedded in newapp micro
 
 It may take a while until data actually shows in UI as some of the data are aggregated in the background and presented after as specific period - eg. 5 minutes.
 
+This concludes the exercise.
+
+[Go back to the Table of Content](../../README.md)
+
+<table>
+  <tr>
+    <td>Version</td>
+    <td>1.0</td>
+  </tr>
+  <tr>
+    <td>Author</td>
+    <td>Wlodek Dymaczewski, IBM</td>
+  </tr>
+  <tr>
+    <td>email</td>
+    <td>dymaczewski@pl.ibm.com</td>
+  </tr>
+</table>

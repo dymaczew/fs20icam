@@ -68,6 +68,10 @@ Within the Event polidy tab, select Create event policy and provide the followin
     •	Under Enable:
         o	Click On to enable the Event Policy
     •	Click Save
+In the policy conditions, you can specify a set of AND and OR conditions to ensure that your policy get processed on the correct events.  In this case, the policy will get processed if any event contains "pythonReqHighResponseTime" in the summary. 
+
+Notice that there is a "Test" button that allows you to verify whether you policy conditions are setup correctly.
+
 Observe the new Event Policy in the list.
 
 ![](images/2020-01-16-16-45-29.png)

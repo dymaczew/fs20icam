@@ -118,6 +118,8 @@ Confirm the resulting Policies list include your new policy in the list of Incid
 
 This Incident policy will result in an Incident that opens which contains the pythonApplicationRuntime Resource type to be set to a Priority of 1.
 
+Notice that there is a 3rd tab within the Policies.  The "Lookup tables" allow you to create lookup tables that can be used in the Event enrichment.  For example, you might create a lookup table that maps IP addresses to hostnames and then use that lookup table to replace the IP address in the Event with the hostname.
+
 ## Create a Threshold
 
 At this point, the two policies are ready to act on any Threshold that is true that meets the conditions you specified.  Let’s move forward and create a Threshold and see the results.

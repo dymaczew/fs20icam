@@ -110,6 +110,8 @@ Click the Incident Policy tab, then click Create Incident Policy and provide the
         o	Click On
     •	Click Save
 
+Notice that Incident policies have other options.  For example, in the "Assign and notify" section, you can configure ICAM to notify people when the incident opens.  For example, send an e-mail to the python DevOps team.
+
 Confirm the resulting Policies list include your new policy in the list of Incident Policies.
 
 ![](images/2020-01-16-17-02-28.png)

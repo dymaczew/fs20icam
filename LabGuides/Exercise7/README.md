@@ -160,6 +160,8 @@ Observe the new threshold in the list of thresholds, and confirm it is both Edit
 
 ![](images/2020-01-16-17-35-54.png)
 
+Depending on the performance characteristics of your bookinfo application, the threshold that you just created might trigger and Event and create an Incident.  Go to the "Incident" tab and look under "All Incidents" for an incident with bookinfo-demo-productpage in the summary.  If you expand the Incident, you'll see the pythonReqHighResponseTimePolicy threshold that you created earlier.
+
 This concludes the exercise.
 
 [Go back to the Table of Content](../../README.md)

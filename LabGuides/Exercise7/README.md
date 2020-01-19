@@ -74,6 +74,8 @@ Notice that there is a "Test" button that allows you to verify whether you polic
 
 In the Action section you chose to enrich the event.  Specifically, you are replacing the Summary field in the Event with a more meaningful string.  As new Events open that contain "pythonReqHighResponseTime" in the summary, it will be replaced with "Python requests are responding slowly".
 
+Notice that there are other options with the policies.  For example, you can perform event suppression, assign Runbooks when an Event triggers, detect flapping, and forward events to 3rd party tools.
+
 Observe the new Event Policy in the list.
 
 ![](images/2020-01-16-16-45-29.png)

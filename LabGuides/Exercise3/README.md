@@ -40,7 +40,7 @@ This change makes your cluster match the placementrule for Bookinfo application 
 kubectl get pods -n bookinfo
 ```
 
-This conludes the exercise. Now you have a managed cluster that has Kubernetes data collector installed and instrumeneted Bookinfo application that is deployed to that cluster.
+This conludes the exercise. Now you have a managed cluster that has Kubernetes data collector installed and instrumented Bookinfo application that is deployed to that cluster.
 
 [Go back to the Table of Content](../../README.md)
 

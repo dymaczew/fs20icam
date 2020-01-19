@@ -2,6 +2,8 @@
 
 [Go back to the Table of Content](../../README.md)
 
+During this lab, MCM klusterlet is deployed to a managed cluster on a multi-tenant environment.
+
 ## Login to IBM CloudPak for Multicloud Management console
 
 ### 1. On you workstation open a browser and point it to https://icp-console.apps.169.61.23.248.nip.io
@@ -22,20 +24,32 @@
 
 ![](images/2020-01-11-13-20-07.png)
 
-### 6. Provide the cluster name corresponding to your userid. Edit the **Cluster import YAML file** to uncomment ```environment``` and ```region``` clusterLabels as shown below. Disable prometheusIntegration
-```
-   prometheusIntegration:
-     enabled: false
-```
+### 6. Specify your userid when prompted for the cluster name (namspace will auto-populate with the same value).  By naming the cluster with your userid, we'll ensure that there are no duplicate cluster names. 
+
+Edit the **Cluster import YAML file** to: 
+ - uncomment ```environment``` and ```region``` clusterLabels 
+ - disable prometheusIntegration
+
 ![](images/2020-01-13-12-32-32.png)
 
    Then click **Generate command**
+
+If you see the following error
+
+![](images/2020-01-19-15-31-49.png)
+
+it means that your cluster name does not match your userid
+
+*Explanation: For each tenant we have precreated the namespaces matching the userid and assigned them to relevant teams/tenants as managed resource. Since working as userX you don't have cluster admin role you do not have access rights to create a new namespace*
+
 
 ### 7. Click the copy icon next to the generated command
 
 ![](images/2020-01-11-13-27-39.png)
 
-### 8. Paste the command in the terminal window where you are logged in to the managed-cluster environment
+### 8. Paste the command in the terminal window where you connected to the managed-cluster environment
+
+You don't need to authenticate to the managed cluster. It is a minimal (edge-profile) ICP installation without IAM services deployed so cloudctl command won't work against that cluster.
 
 ![](images/2020-01-11-13-32-13.png)
 
@@ -77,7 +91,7 @@ ibm-multicluster-endpoint-operator-854f9b7cbb-jscjk   1/1     Running           
     
 ![](images/2020-01-11-15-43-48.png)
 
-This concludes the exercise.
+This concludes the exercise. You now have a kubernetes cluster that can be managed by MCM and monitored by ICAM.
 
 [Go back to the Table of Content](../../README.md)
 

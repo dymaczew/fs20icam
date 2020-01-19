@@ -10,7 +10,7 @@ Please provide any feedback via the Event mobile app or via mail/slack to the la
 
 [Exercise 2 Install k8s monitor to the managed cluster](./LabGuides/Exercise2/README.md)
 
-[Exercise 3 Installing Bookinfo app to a managed cluster](./LabGuides/Exercise3/README.md)
+[Exercise 3 Installing the Bookinfo app into your managed cluster](./LabGuides/Exercise3/README.md)
 
 [Exercise 4 Installing and configuring a Synthetics PoP](./LabGuides/Exercise4/README.md)
 

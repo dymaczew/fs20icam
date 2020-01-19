@@ -1,10 +1,14 @@
-# Exercisae 4 Installing and configuring a Synthetics PoP
+# Exercise 4 Installing and configuring a Synthetics PoP
 
 [Go back to the Table of Content](../../README.md)
+
+In this exercise, you will be installing a synthetic PoP (point of presence).  The PoP server can be used to playback synthetic tests to proactively monitor your websites and REST APIs.
 
 Knowledge center reference: https://www.ibm.com/support/knowledgecenter/en/SS8G7U_19.4.0/com.ibm.app.mgmt.doc/content/dc_synthetics_intro.html?cp=SSFC4F_1.2.0
 
 ### 1. In the terminal window, where you are logged in to the managed cluster, run the following commands:
+
+Once again you will be using the configpack that you previously downloaded from the ICAM server.  The configpack tells the synthetic PoP and data collectors where to send the performance KPIs.
 
 ```
 cd /home/localuser/install/app_mgmt_syntheticpop_xlinux
@@ -59,6 +63,8 @@ pop.properties is configured! You can run start-pop.sh to start your PoP.
 ./start-pop.sh
 ```
 
+Synthetic PoP will start up and run as a docker container.
+
 ### 3. In the IBM Cloud App Management User Interface go to the **Administration** tab and select the **Synthetics** tile
 
 ![](images/2020-01-15-13-32-29.png)
@@ -75,7 +81,9 @@ pop.properties is configured! You can run start-pop.sh to start your PoP.
 
 ![](images/2020-01-15-13-36-26.png)
 
-### 7. In the next step you need to provide the tested application URL. As the managed cluster you use in the lab is really lightweight it does not have the ingress installed. For testing you will use Cluster IP. To find out the ClusterIP run the following command:
+### 7. In the next step you need to provide the URL of the bookinfo main application page.
+
+As the managed cluster you use in the lab is really lightweight, it does not have the ingress installed. For testing you will use Cluster IP. To find out the ClusterIP run the following command:
 
 ```
 kubectl get svc -n bookinfo |grep productpage |awk '{print "http://" $3 ":9080/productpage?u=normal"}'
@@ -95,7 +103,7 @@ kubectl get svc -n bookinfo |grep productpage |awk '{print "http://" $3 ":9080/p
 
 ![](images/2020-01-15-13-49-36.png)
 
-The test will timeout as your browser don't have access to that page. Ignore the pop-up dialog and click **Next**
+The test will timeout as your browser don't have access to that page, but the Synthetic PoP does have access. Ignore the pop-up dialog and click **Next**
 
 ![](images/2020-01-15-13-51-17.png)
 

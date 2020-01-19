@@ -4,11 +4,11 @@
 
 Normally you install Appsody on the development environment - typically your local workstation. However for the course of this lab you will use the managed cluster to install and run Appsody (More dedicated Appsody and Kabanero labs are planned in other sessions)
 
-The purpose of this exercise it to demonstrate that the Appsody stacks by default include the monitoring instrumentation for selected runtimes and how to connect the genereated microservices to the IBM Cloud App Management server.
+The purpose of this exercise it to demonstrate that the Appsody stacks by default include the monitoring instrumentation for selected runtimes. You will also learn how to connect the genereated microservices to the IBM Cloud App Management server.
 
 ### 1. Install the Appsody on the managed cluster
 
-Appsody binaried has been downloaded for you and are located in /home/localuser/install. Run the following command to install Appsody:
+Appsody binaries has been downloaded for you and are located in /home/localuser/install directory. Run the following commands to install Appsody:
 ```
 cd /home/localuser/install
 sudo apt-get install -y ./appsody_0.5.4_amd64.deb
@@ -27,7 +27,7 @@ appsody init nodejs-express
 
 ### 3. Building and deploying the microservice to the managed cluster
 
-You can review the sample application app.js. It is very simple - there is nothing special in the JavaScript code. The instrumentation is hidden in the ```package-lock.json``` file.
+You can review the sample application app.js. It is very simple - there is nothing special in the JavaScript code. The runtime instrumentation is embedded in the docker.io/appsody/nodejs-express:0.4 container that is used for building target container for your microservice. 
 
 To build the application run the following command
 ```
@@ -135,7 +135,7 @@ spec:
           secretName: icam-server-secret</b>
 </pre>
 
-Parts marked in **bold** instruct the data collector where to get the ICAM configuration information from, and how much of the traffic should be sampled (in percent). Value 1 of JAEGER_SAMPLER_PARAM and LATENCY_SAMPLER_PARAM means that all the request should be measured, which makes sense only in test/demo environments.
+Parts marked in **bold** instruct the data collector where to get the ICAM configuration information from, and how much of the traffic should be sampled (in percent). JAEGER_SAMPLER_PARAM and LATENCY_SAMPLER_PARAM variables accept decimal values in range from 0 to 1, eg 0.33 means 1/3 of request will be sampled. Value of 1 means that all the requests should be measured, which makes sense only in test/demo environments.
 
 Create the deployment using kubectl
 ```

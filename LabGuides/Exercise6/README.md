@@ -16,7 +16,7 @@ Let’s look at the Kubernetes resources.  Like we did in the last exercise, cli
 
 ![](images/2020-01-16-14-50-29.png)
 
-Within the list, click on the mcmdsemo link.  You will see a page showing information about the Kubernetes Cluster.   
+Within the list, click on the link with the name of your cluster.  You will see a page showing information about the Kubernetes Cluster.   
 
 ![](images/2020-01-16-14-53-50.png)
 

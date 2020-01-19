@@ -72,6 +72,8 @@ In the policy conditions, you can specify a set of AND and OR conditions to ensu
 
 Notice that there is a "Test" button that allows you to verify whether you policy conditions are setup correctly.
 
+In the Action section you chose to enrich the event.  Specifically, you are replacing the Summary field in the Event with a more meaningful string.  As new Events open that contain "pythonReqHighResponseTime" in the summary, it will be replaced with "Python requests are responding slowly".
+
 Observe the new Event Policy in the list.
 
 ![](images/2020-01-16-16-45-29.png)

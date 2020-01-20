@@ -123,6 +123,8 @@ The test will timeout as your browser don't have access to that page, but the Sy
 
 ![](images/2020-01-15-17-22-11.png)
 
+Note: It may take a few minutes before the synthetic playback tests are visible in the user interface.
+
 This concludes the exercise.
 
 [Go back to the Table of Content](../../README.md)

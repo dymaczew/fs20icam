@@ -16,7 +16,7 @@ Let’s look at the Kubernetes resources.  Like we did in the last exercise, cli
 
 ![](images/2020-01-16-14-50-29.png)
 
-Within the list, click on the mcmdsemo link.  You will see a page showing information about the Kubernetes Cluster.   
+Within the list, click on the link with the name of your cluster.  You will see a page showing information about the Kubernetes Cluster.   
 
 ![](images/2020-01-16-14-53-50.png)
 
@@ -24,7 +24,9 @@ The most important element is the widget on the left side showing the topology o
 
 ![](images/2020-01-16-14-56-16.png)
 
-The large circle represents the cluster.  Each of the hexagons represents one of the nodes in the cluster.  You’ll see 3 master nodes and several worker nodes in the lab environment.  Click on any of the objects and drill into more details.  For example, click on the hexagon that is labeled worker1 and you will see a large circle (the cluster), a single hexagon (the node), and a large number of small circles that represent the pods.
+In your lab environment, the cluster is very simple.  Your managed cluster contains a single node.
+
+The large circle represents the cluster.  Each of the hexagons represents one of the nodes in the cluster.  Click on any of the objects and drill into more details.  For example, click on the hexagon that is labeled master and you will see a large circle (the cluster), a single hexagon (the node), and a large number of small circles that represent the pods.
 
 ![](images/2020-01-16-15-02-32.png)
 

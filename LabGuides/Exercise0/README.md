@@ -8,6 +8,8 @@ To access the Hub cluster open a browser on your workstation and point it to:
 
 https://icp-console.apps.169.61.23.248.nip.io
 
+When you log into the MCM user interface, you will login with your assigned username.  The password is alpine-has-acorn-valley
+
 **ATTENTION: Lab tutorials were tested with Firefox browser.**
 
 To access the managed cluster you need a terminal with SSH client. On Mac or Linux workstation use a regular terminal, on Windows use Putty

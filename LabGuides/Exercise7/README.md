@@ -68,6 +68,14 @@ Within the Event polidy tab, select Create event policy and provide the followin
     •	Under Enable:
         o	Click On to enable the Event Policy
     •	Click Save
+In the policy conditions, you can specify a set of AND and OR conditions to ensure that your policy get processed on the correct events.  In this case, the policy will get processed if any event contains "pythonReqHighResponseTime" in the summary. 
+
+Notice that there is a "Test" button that allows you to verify whether you policy conditions are setup correctly.
+
+In the Action section you chose to enrich the event.  Specifically, you are replacing the Summary field in the Event with a more meaningful string.  As new Events open that contain "pythonReqHighResponseTime" in the summary, it will be replaced with "Python requests are responding slowly".
+
+Notice that there are other options with the policies.  For example, you can perform event suppression, assign Runbooks when an Event triggers, detect flapping, and forward events to 3rd party tools.
+
 Observe the new Event Policy in the list.
 
 ![](images/2020-01-16-16-45-29.png)
@@ -102,11 +110,15 @@ Click the Incident Policy tab, then click Create Incident Policy and provide the
         o	Click On
     •	Click Save
 
+Notice that Incident policies have other options.  For example, in the "Assign and notify" section, you can configure ICAM to notify people when the incident opens.  For example, send an e-mail to the python DevOps team.
+
 Confirm the resulting Policies list include your new policy in the list of Incident Policies.
 
 ![](images/2020-01-16-17-02-28.png)
 
 This Incident policy will result in an Incident that opens which contains the pythonApplicationRuntime Resource type to be set to a Priority of 1.
+
+Notice that there is a 3rd tab within the Policies.  The "Lookup tables" allow you to create lookup tables that can be used in the Event enrichment.  For example, you might create a lookup table that maps IP addresses to hostnames and then use that lookup table to replace the IP address in the Event with the hostname.
 
 ## Create a Threshold
 
@@ -147,6 +159,8 @@ Now, let’s create our own custom Threshold.  Click Create in the upper right a
 Observe the new threshold in the list of thresholds, and confirm it is both Editable and Enabled.
 
 ![](images/2020-01-16-17-35-54.png)
+
+Depending on the performance characteristics of your bookinfo application, the threshold that you just created might trigger and Event and create an Incident.  Go to the "Incident" tab and look under "All Incidents" for an incident with bookinfo-demo-productpage in the summary.  If you expand the Incident, you'll see the pythonReqHighResponseTimePolicy threshold that you created earlier.
 
 This concludes the exercise.
 

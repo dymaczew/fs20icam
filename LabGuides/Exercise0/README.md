@@ -38,17 +38,23 @@ You should see the page that looks like this
 
 ![](images/2020-01-20-13-55-03.png)
 
-Take a note of the port number, next to the **managed-cluster** VM. In above example it is *12316*. It is the SSH port exposed from the virtal machine for your instance.
+Take a note of address and the port number, next to the **managed-cluster** VM. In above example, it is *services-uscentral.skytap.com* and *12316*. It is the SSH port exposed from the virtal machine for your instance.
 
 Open the terminal on your workstation. Connect to the VM using user **localuser** with password **passw0rd**
 
 For Mac and Linux
 ```
-ssh -p <port> localuser@services-uscentral.skytap.com
+ssh -p <port> localuser@<address>
+```
+
+for example:
+```
+ssh -p 12316 localuser@services-uscentral.skytap.com
 ```
 
 For Windows use putty
 
+![](images/2020-01-20-15-25-41.png)
 
 ## Copying files between your local workstation and managed-cluster
 

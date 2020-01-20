@@ -2,9 +2,11 @@ For this synthetic test we are going to monitor the availability and response ti
 
 ## Accessing the Synthetic editor
 
-**Navigation to Synthetics **
+**Navigation to Synthetics**
 
 The synthetic editor is listed in the Administration tab at the top of the screen.  To navigate to the correct place, if not already in ICAM, first click the hamburger menu in the top left, select **“Monitor health”** then **"Infrastructure monitoring"** from the menu and then click on **“Administration”** in the resulting bar.
+
+![](images/2020-01-20-09-09-57.png)
 
 ![](images/2020-01-20-07-42-06.png)
 
@@ -22,7 +24,7 @@ Click on the **“Create”** button
 
 We are again going to build another synthetic test, but this time using an API REST interface.
 First give the new test a name. 
-Use any name you wish. I am going to use the name _“Pet Store – REST Availability”_ for this example.
+Use any name you wish. I am going to use the name `Pet Store – REST Availability` for this example.
 
 ![](images/2020-01-20-07-49-58.png)
 
@@ -73,8 +75,6 @@ Here is where the details of the test order go. You can copy this block into the
     "complete": true
 }
 ```
-![](images/2020-01-20-09-03-59.png)
-
 **Response validation**
 
 Next, we are going to configure the warning and critical event thresholds for the test. 
@@ -111,11 +111,11 @@ Click **“Next”** in the bottom right corner.
 
 **Settings**
 
-The next step is to set interval frequency of the synthetic test. In most production environments longer intervals are most likely, but as this is a lab and we want to generate some data quickly, set the interval to 1 minute.
+The next step is to set interval frequency of the synthetic test. In most production environments longer intervals are likely, but as this is a lab and we want to generate some data quickly, set the interval to 5 minutes.
 
 With ICAM you can test from multiple locations around the globe. The **“Testing Frequency”** will allow you to either run the same synthetic test simultaneously from all the sites or stagger them. In this case leave **“Simultaneous”** selected.
 
-![](images/2020-01-20-07-56-55.png)
+![](images/2020-01-20-09-13-30.png)
 
 **Locations**
 
@@ -139,13 +139,13 @@ You have now completed the configuration of the REST API synthetic test. Click *
 
 ## Synthetic results
 
-Now that you have created the synthetic test, it’s time to see how the API is performing. To do this you again will need to consult the Synthetic results dashboard. Here is how to navigate to that page.
+Now that you have created the synthetic test, it’s time to see how the API is performing. To do this you again will need to consult the synthetic results dashboard. Here is how to navigate to that page.
 
-Click the “Synthetic Results” at the top of the screen
+Click the **“Synthetic Results”** at the top of the screen
 
 ![](images/2020-01-20-08-01-20.png)
 
-You will now see all the Synthetic tests you have created. 
+You will now see all the synthetic tests you have created. 
 
 Select the script you just created by clicking on the blue name
 

@@ -6,7 +6,7 @@ For the FastStart 2020 labs related to the IBM Cloud Pak for Multicloud Manageme
 
 To access the Hub cluster open a browser on your workstation and point it to:
 
-https://icp-console.apps.169.61.23.248.nip.io
+<a href="https://icp-console.apps.169.61.23.248.nip.io" target="_blank">https://icp-console.apps.169.61.23.248.nip.io</a>
 
 When you log into the MCM user interface, you will login with your assigned username.  The password is alpine-has-acorn-valley
 
@@ -16,17 +16,31 @@ To access the managed cluster you need a terminal with SSH client. On Mac or Lin
 
 ## Connecting to the managed cluster
 
-When you login to the event URL using the form similar to the following screenshot
+Open the Session URL given you by instructor. You should see the form similar to the one shown below:
 
-![](images/2020-01-15-20-13-24.png)
+![](images/2020-01-20-13-57-59.png)
 
-you will see the page that looks like this
+Provide you email address and click **Login**. Then, provide the code given you by instructor and click **Register**
 
-![](images/2020-01-15-20-15-20.png)
+![](images/2020-01-20-14-09-35.png)
 
-Take a note of the port next to the **managed-cluster** VM
+Verify that the environment was started. Click **Launch Lab** link on the left.
 
-Connect to the VM using user **localuser** with password **passw0rd**
+![](images/2020-01-20-14-16-12.png)
+
+If the managed cluster VM is not running start it clicking **Play** button. You can ignore the dev-workstation VM - it won't be used in this lab
+
+![](images/2020-01-20-14-18-17.png)
+
+<span style="color:red">**IT IS NOT RECOMMENDED TO USE SKYTAP UI TO CONNECT TO THE MACHINE - YOU WILL USE A TERMINAL CONNECTION DIRECTLY FROM YOUR WORKSTATION**</span>
+
+You should see the page that looks like this
+
+![](images/2020-01-20-13-55-03.png)
+
+Take a note of the port number, next to the **managed-cluster** VM. In above example it is *12316*. It is the SSH port exposed from the virtal machine for your instance.
+
+Open the terminal on your workstation. Connect to the VM using user **localuser** with password **passw0rd**
 
 For Mac and Linux
 ```
@@ -36,7 +50,7 @@ ssh -p <port> localuser@services-uscentral.skytap.com
 For Windows use putty
 
 
-## Coping files between your local workstation and managed-cluster
+## Copying files between your local workstation and managed-cluster
 
 If you need to copy any file between your local workstation and managed-cluster in Skytap, use the following:
 

@@ -43,8 +43,9 @@ Output should show recently build docker image
 dev.local/newapp                                                   latest              c98cbb4ee3bb        8 minutes ago       177MB
 ```
 
-You will deploy the microservice to the default namespace. To instruct the monitoring data collector embedded in the microservice where to send the data, you need to create a secret with ICAM server configuration. Run the steps similar to the 
-To deploy the image on the managed cluster use the Step 2 in [Exercise 3 Installing Bookinfo app to a managed cluster](../Exercise3/README.md). The only difference is that you will use *default* namespace instead on *bookinfo*
+You will deploy the microservice to the default namespace. To instruct the monitoring data collector embedded in the microservice where to send the data, you need to create a secret with ICAM server configuration. Run the steps similar to the Step 2 in [Installing Bookinfo app to a managed cluster](../Exercise3/README.md). The only difference is that you will use *default* namespace instead on *bookinfo*
+
+The configpak files should be there if you completed the steps in previous exercises. If not, follow the steps in tutorial [Install k8s monitor to the managed cluster](../Exercise2/README.md).
 
 ```
 LOCALDIR=`pwd`

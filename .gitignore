@@ -2,3 +2,4 @@
 notes.md
 *.tar
 changelog.txt
+.DS_Store

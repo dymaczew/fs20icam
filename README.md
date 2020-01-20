@@ -28,6 +28,8 @@ Please provide any feedback via the Event mobile app or via mail/slack to the la
 
 [Exercise 11 Exploring Integrations](./LabGuides/Exercise11/README.md)
 
+[Exploring the Golden Signals](./LabGuides/Exercise12/README.md)
+
 
 <table>
   <tr>

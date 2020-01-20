@@ -40,19 +40,40 @@ As we want to monitor a REST API we will select the **“REST API”** tile.
 
 **Request Method**
 
-For the request method we need to select the drop-down and click on **“GET”** as we want to get data in the response to our test.
+For the request method we need to select the drop-down and click on **POST”** as we want to get data in the response to our test.
 
-![](images/2020-01-20-07-51-11.png)
+![](images/2020-01-20-08-54-56.png)
 
 **Data source URL**
 
 You can pick any REST API you want in this exercise. I have provided an external URL for a test API interface which will allow you to run the test and see the data coming back.  In the URL box type:
 
-_https://petstore.swagger.io/v2/pet/findByStatus?status=available_
+`https://petstore.swagger.io/v2/store/order`
 
 Note: If you want to see the data first before creating the test, enter the URL into a separate browser window and you can view its structure and information.
 
-![](images/2020-01-20-07-51-56.png)
+![](images/2020-01-20-08-56-41.png)
+
+**Header and Header value**
+
+These are optional, but in this case we are doing a POST and we need to tell the API what type of data to expect. Add a header called `Content-Type` with value `application/json`.
+
+![](images/2020-01-20-08-59-16.png)
+
+**Request Body**
+
+Here is where the details of the test order go. You can copy this block into the Request Body.
+```
+{
+    "id": 0,
+    "petId": 0,
+    "quantity": 0,
+    "shipDate": "2020-01-20T13:40:02.204+0000",
+    "status": "placed",
+    "complete": true
+}
+```
+![](images/2020-01-20-09-03-59.png)
 
 **Response validation**
 
@@ -82,7 +103,7 @@ Red = fail – Should any of your verifications fail you can click on the **“D
 
 In our case this test should pass and you will be presented with a green check mark.
 
-![](images/2020-01-20-07-54-50.png)
+![](images/2020-01-20-09-04-55.png)
 
 Click **“Next”** in the bottom right corner.
 

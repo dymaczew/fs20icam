@@ -1,8 +1,14 @@
 # Tutorials for FastStart 2020 ICAM Labs
 
-The following tutorials were created for use during FastStart 2020 events. For later access look at [ibm.com/demos](httsp://www.ibm.com/demos)
+The following tutorials were created for use during FastStart 2020 events. For later access look at [ibm.com/demos](https://www.ibm.com/demos)
+
+
 
 Please provide any feedback via the Event mobile app or via mail/slack to the lab author
+
+## General tutorials (for both lab sessions)
+
+The following tutorials are needed for each lab session using the Skytap based managed cluster environments
 
 [Accessing the environment](./LabGuides/Exercise0/README.md)
 
@@ -14,6 +20,8 @@ Please provide any feedback via the Event mobile app or via mail/slack to the la
 
 [Installing and configuring a Synthetics PoP](./LabGuides/Exercise4/README.md)
 
+## Tutorials for session "Application management for 2nd day operations"
+
 [Instrumenting a new microservice using Appsody](./LabGuides/Exercise5/README.md)
 
 [Exploring Kubernetes Resources and Dashboards](./LabGuides/Exercise6/README.md)
@@ -24,11 +32,19 @@ Please provide any feedback via the Event mobile app or via mail/slack to the la
 
 [Exploring Integrations](./LabGuides/Exercise11/README.md)
 
+## Tutorials for session "App and infrastructure management using Golden Signals and AIOps"
+
+Testing with Selenium demo
+
+[Creating REST testing script -TODO ???]()
+
 [Creating a custom Event Policy, Incident Policy, and Threshold](./LabGuides/Exercise7/README.md)
 
 [Creating a Resource Group](./LabGuides/Exercise8/README.md)
 
 [Creating a Runbook](./LabGuides/Exercise10/README.md)
+
+AIOps demo
 
 <table>
   <tr>

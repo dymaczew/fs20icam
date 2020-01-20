@@ -8,7 +8,7 @@ Please provide any feedback via the Event mobile app or via mail/slack to the la
 
 ## General tutorials (for both lab sessions)
 
-The following tutorials are needed for each lab session using the Skytap based managed cluster environments
+The following tutorials are needed for each lab session using the Skytap based managed cluster environments. You are supposed to follow the guide in sequence, completeing the following exercises:
 
 [Accessing the environment](./LabGuides/Exercise0/README.md)
 

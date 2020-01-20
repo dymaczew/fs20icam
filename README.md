@@ -36,7 +36,7 @@ The following tutorials are needed for each lab session using the Skytap based m
 
 Testing with Selenium demo
 
-[Creating REST testing script -TODO ???]()
+[Creating REST testing script ](./LabGuides/restapi/README.md)
 
 [Creating a custom Event Policy, Incident Policy, and Threshold](./LabGuides/Exercise7/README.md)
 

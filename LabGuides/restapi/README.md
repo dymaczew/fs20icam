@@ -158,3 +158,28 @@ There is a visual representation of the test and also the time in milliseconds o
 ![](2020-01-20-08-04-33.png)
 
 As we have used an external source as the URL. You are more likely to see changes in the results.  Remember you can use the first (top) widgets on this screen to review data such as the average times and percentage availability.
+
+[Go back to the Table of Content](../../README.md)
+
+<table>
+  <tr>
+    <td>Version</td>
+    <td>1.0</td>
+  </tr>
+  <tr>
+    <td>Author</td>
+    <td>Sean Lombardo, IBM</td>
+  </tr>
+  <tr>
+    <td>email</td>
+    <td>sean.lombardo@ibm.com</td>
+  </tr>
+  <tr>
+    <td>Author</td>
+    <td>Cross Ganaway, IBM</td>
+   </tr>
+   <tr>
+     <td>email</td>
+     <td>cganawa@us.ibm.com</td>
+   </tr> 
+</table>

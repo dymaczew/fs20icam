@@ -104,9 +104,7 @@ spec:
             value: "debug"        
           - name: OPENTRACING_ENABLED
             value: "true"
-          - name: JAEGER_SAMPLER_TYPE
-            value: probabilistic
-          - name: JAEGER_SAMPLER_PARAM
+          - name: OPENTRACING_SAMPLER
             value: "1"
           - name: LATENCY_SAMPLER_PARAM
             value: "1"</b>

@@ -1,6 +1,6 @@
 # Exercise 11 Exploring Integrations
 
-[Go back to the Table of Content](../../README.md)
+[Go back to the Table of Contents](../../README.md)
 
 You can integrate other products with Cloud App Management to provide you with a robust monitoring solution.  Listed below are the types of integrations offered.
 
@@ -45,7 +45,7 @@ Feel free to click Configure on any of the integrations to see how you would con
 
 You should be back at the main integrations page now.  Click on the Outgoing tab to be taken to that page.  Most likely there will be no outgoing integrations configured yet so you will just have a blank page.  Click on the New integration button to see what is available.
 
-You will notice that this page has only one section - Standard integrations.  These are some of the more common applications that you would likely integrate with to send your events.  Like on the incoming integrations page, there is a Webhook integration here as well to enable custom integrations for any applicaitons not provided out of the box.
+Notice that this page has only one section - Standard integrations.  These are some of the more common applications that you would likely integrate with to send your events.  Like on the incoming integrations page, there is a Webhook integration here as well to enable custom integrations for any applicaitons not provided out of the box.
 
 ![](images/2020-01-17-15-25-15.png)
 
@@ -53,7 +53,7 @@ Feel free to click Configure on any of the integrations to see how you would con
 
 This concludes the exercise.
 
-[Go back to the Table of Content](../../README.md)
+[Go back to the Table of Contents](../../README.md)
 
 <table>
   <tr>
@@ -66,6 +66,6 @@ This concludes the exercise.
   </tr>
   <tr>
     <td>email</td>
-    <td>sean.lombardo.ibm.com</td>
+    <td>sean.lombardo@ibm.com</td>
   </tr>
 </table>

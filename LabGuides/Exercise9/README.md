@@ -1,6 +1,6 @@
 # Exercise 9 Exploring Thresholds
 
-[Go back to the Table of Content](../../README.md)
+[Go back to the Table of Contents](../../README.md)
 
 Thresholds test for resource issues such as a slow response time. When the conditions of a threshold are true, an event is opened and an incident is generated. You can create, edit, delete, enable, or disable thresholds.
 
@@ -18,16 +18,16 @@ In the Thresholds page you will see a list of all of the out of the box threshol
 
 The column headings for the Thersholds table are defined below:
 
-•	Name is the title given to the threshold when it was saved. Click the name to view and change the     definition in the threshold editor page.
+•	**Name** is the title given to the threshold when it was saved. Click the name to view and change the     definition in the threshold editor page.
 
-•	Severity is the severity that was chosen for the threshold.
+•	**Severity** is the severity that was chosen for the threshold.
 
-•	Assigned to is the resource type that the threshold is defined to monitor, such as Linux Systems      or Kubernetes Service.
+•	**Assigned to** is the resource type that the threshold is defined to monitor, such as Linux Systems      or Kubernetes Service.
 
-•	Permissions are either Read-only or Editable. Read-only thresholds are predefined or importe
+•	**Permissions** are either Read-only or Editable. Read-only thresholds are predefined or importe
 from integrated sources and cannot be changed. Editable thresholds were created by a member of your team and you have full editing capability.
 
-•	State is Enabled for thresholds that are operational, which means they are monitoring the             resources that they were assigned to. State is Disabled state when Enable has been turned off and     the threshold is non-operational.
+•	**State** is Enabled for thresholds that are operational, which means they are monitoring the             resources that they were assigned to. State is Disabled state when Enable has been turned off and     the threshold is non-operational.
 
 If you're looking for a threshold that doesn't show on the first page of the table, you can use the page controls to help you more readily find what you're looking for.
 
@@ -91,7 +91,7 @@ Finally you have the Enable switch, with will turn the threshold on or off.  Whe
 
 This concludes the exercise.
 
-[Go back to the Table of Content](../../README.md)
+[Go back to the Table of Contents](../../README.md)
 
 <table>
   <tr>
@@ -104,7 +104,7 @@ This concludes the exercise.
   </tr>
   <tr>
     <td>email</td>
-    <td>sean.lombardo.ibm.com</td>
+    <td>sean.lombardo@ibm.com</td>
   </tr>
 </table>
 

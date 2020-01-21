@@ -1,6 +1,6 @@
 # Exercise 4 Installing and configuring a Synthetics PoP
 
-[Go back to the Table of Content](../../README.md)
+[Go back to the Table of Contents](../../README.md)
 
 In this exercise, you will be installing a synthetic PoP (point of presence).  The PoP server can be used to playback synthetic tests to proactively monitor your websites and REST APIs.
 
@@ -22,27 +22,27 @@ Answer the installation wizard with the following values:
 <pre>
 You will configure a new local point of presence (PoP).
 
-Enter a name for your PoP. Your PoP will be identified by this name: <b>pop_user1</b> <-- Use your user id
+Enter a name for your PoP. Your PoP will be identified by this name: <span style="color:orange"><b>pop_user1</b> <-- Use your user id</span><br>
 The PoP name is set to pop_user1
 
 
-Enter the name of the country in which your PoP is located: Austria
+Enter the name of the country in which your PoP is located: <span style="color:orange"><b>Austria</b> <-- Use any country</span><br>
 The country name is set to Austria
 
 
-Enter the name of the city in which your PoP is located: Vienna
+Enter the name of the city in which your PoP is located: <span style="color:orange"><b>Vienna</b> <-- Use any city</span><br>
 The city name is set to Vienna
 
 
-Enter a description of your PoP (optional): FS20pop
+Enter a description of your PoP (optional): <span style="color:orange"><b>FS20pop</b> <-- It is just descritpion</span><br>
 The description is set to "FS20pop"
 
 
-Enter the proxy server address for communicating with IBM ICAM server. The address format is ip:port (Press Enter if you do not need to use a proxy) :  
+Enter the proxy server address for communicating with IBM ICAM server. The address format is ip:port (Press Enter if you do not need to use a proxy) :  <span style="color:orange">Press Enter</span><br>
 Proxy server address for communicating with IBM ICAM server is set to 
 
 
-Update the proxy type (no | manual | pac) for playbacking synthetic tests to monitor your web applications. Enter 'no' to choose no proxy. Enter 'manual' to configure your proxy with a proxy server ip address and port number. Enter 'pac' to use an automatic configuration URL. (Press Enter if you do not want to make any changes: no): 
+Update the proxy type (no | manual | pac) for playbacking synthetic tests to monitor your web applications. Enter 'no' to choose no proxy. Enter 'manual' to configure your proxy with a proxy server ip address and port number. Enter 'pac' to use an automatic configuration URL. (Press Enter if you do not want to make any changes: no): <span style="color:orange">Press Enter</span><br>
 Playback proxy type is set to no
 
 
@@ -55,7 +55,7 @@ PLAYBACK_PROXY_BYPASS=""
 PLAYBACK_PROXY_CONFIG_URL=""
 CACHE_REDIS_MAX_SIZE_MB=""
 
-Do you confirm? [y for yes or n for no]: y
+Do you confirm? [y for yes or n for no]: <span style="color:orange">Press <b>'y'</b></span><br>
 pop.properties is configured! You can run start-pop.sh to start your PoP.
 </pre>
 
@@ -137,7 +137,7 @@ Note: It may take a few minutes before the synthetic playback tests are visible 
 
 This concludes the exercise.
 
-[Go back to the Table of Content](../../README.md)
+[Go back to the Table of Contents](../../README.md)
 
 <table>
   <tr>

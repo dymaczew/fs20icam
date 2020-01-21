@@ -1,6 +1,6 @@
 # Exercise 12 Exploring the Golden Signals
 
-[Go back to the Table of Content](../../README.md)
+[Go back to the Table of Contents](../../README.md)
 
 During this lab exercise, you will be exploring the Golden Signals.  The Golden Signals are a way of normalizing the performance KPIs to make it easier and more intuitive for an SRE to debug a problem.
 
@@ -68,7 +68,7 @@ Notice that you can customize the latency options.  Either change the latency pe
 
 ### 7. Next, examine the Service dependencies
 
-![](images/2020-01-19-19-40-00.png)
+![](images/2020-01-21-08-48-36.png)
 
 The service dependency shows a 1-hop topology of the microservices.  For the productpage service, it shows that there are clients connecting to the service and there is a dependency on "details" and "reviews".  
 
@@ -87,6 +87,8 @@ The view you see comes from an embedded capability called Agile Service Manager 
 Let's start by switching to a 2-hop topology.  Select the dropdown in the top-middle of the screen and change the value to "2".  Then click "Render"
 
 ![](images/2020-01-20-08-35-09.png)
+
+*EXPLANATION: Your view might be slightly different (without a bookinfo-demo icon). This icon represents the ingress and your managed cluster does not have ingress installed so this resource doesn't show up*
 
 We won't examine it here, but ASM allows you to hide/show some additional objects in the topology.  In this topology, you see the microservice topology.  If you want, you can add the pods into the topology.  To add/hide elements on the page, click the **Filter** icon to the left of the "Render" button.
 
@@ -121,7 +123,7 @@ Additional resources:
 - [Blog: Golden Signals explained](https://www.ibm.com/cloud/blog/video-better-application-monitoring-with-sre-golden-signals)
 
 
-[Go back to the Table of Content](../../README.md)
+[Go back to the Table of Contents](../../README.md)
 
 <table>
   <tr>

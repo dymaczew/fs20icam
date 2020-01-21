@@ -8,7 +8,7 @@ The purpose of this exercise it to demonstrate that the Appsody stacks by defaul
 
 ### 1. Install the Appsody on the managed cluster
 
-Appsody binaries has been downloaded for you and are located in /home/localuser/install directory. Run the following commands to install Appsody:
+Appsody binaries have been downloaded for you and are located in /home/localuser/install directory. Run the following commands to install Appsody:
 ```
 cd /home/localuser/install
 sudo apt-get install -y ./appsody_0.5.4_amd64.deb
@@ -43,9 +43,11 @@ Output should show recently build docker image
 dev.local/newapp                                                   latest              c98cbb4ee3bb        8 minutes ago       177MB
 ```
 
-You will deploy the microservice to the default namespace. To instruct the monitoring data collector embedded in the microservice where to send the data, you need to create a secret with ICAM server configuration. Run the steps similar to the Step 2 in [Installing Bookinfo app to a managed cluster](../Exercise3/README.md). The only difference is that you will use *default* namespace instead on *bookinfo*
+You will deploy the microservice to the *default* namespace. To instruct the monitoring data collector embedded in the microservice where to send the data, you need to create a secret with ICAM server configuration, similarly to the Step 2 in [Installing Bookinfo app to a managed cluster](../Exercise3/README.md). The only difference is that you will use *default* namespace instead on *bookinfo*
 
 The configpak files should be there if you completed the steps in previous exercises. If not, follow the steps in tutorial [Install k8s monitor to the managed cluster](../Exercise2/README.md).
+
+To create the *icam-server-secret* run the following commands:
 
 ```
 LOCALDIR=`pwd`

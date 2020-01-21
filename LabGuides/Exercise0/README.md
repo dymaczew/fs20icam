@@ -1,20 +1,29 @@
 # Accessing the lab environment
 
-[Go back to the Table of Content](../../README.md)
+[Go back to the Table of Contents](../../README.md)
 
 For the FastStart 2020 labs related to the IBM Cloud Pak for Multicloud Management - IBM Cloud App Management component you will be using the central Hub server installed in IBM Cloud. This environment is setup to be multi-tenant where each student has their own isolated tenant.  Each student will have their own ICP cluster in Skytap that you will manage from the centralized Hub server.
+
+<span style="color:red">
+<table border="4">
+<tr><th colspan="3">Access credentials</th>
+<tr><th>Interface</th><th>Username</th><th>Password</th>
+<tr><td>IBM CloudPak for MCM User Interface</td><td>assigned to you by lab instructor (<b>userXX</b>)</td><td><b>alpine-has-acorn-valley</b></td></tr>
+<tr><td>managed-cluster VM</td><td><b>localuser</b></td><td><b>passw0rd</b></td></tr>
+</table>
+</span>
+
+## Connecting to the IBM CloudPak for Multicloud Management Hub
 
 To access the Hub cluster open a browser on your workstation and point it to:
 
 <a href="https://icp-console.apps.169.61.23.248.nip.io" target="_blank">https://icp-console.apps.169.61.23.248.nip.io</a>
 
-When you log into the MCM user interface, you will login with your assigned username.  The password is alpine-has-acorn-valley
-
 **ATTENTION: Lab tutorials were tested with Firefox browser.**
 
-To access the managed cluster you need a terminal with SSH client. On Mac or Linux workstation use a regular terminal, on Windows use Putty
-
 ## Connecting to the managed cluster
+
+To access the managed cluster you need a terminal with SSH client. On Mac or Linux workstation use a regular terminal, on Windows use Putty
 
 Open the Session URL given you by instructor. You should see the form similar to the one shown below:
 
@@ -58,7 +67,7 @@ For Windows use putty
 
 ## Copying files between your local workstation and managed-cluster
 
-If you need to copy any file between your local workstation and managed-cluster in Skytap, use the following:
+When you need to copy any file between your local workstation and managed-cluster in Skytap, use the following:
 
 For Mac and  Linux
 ```
@@ -68,7 +77,7 @@ scp -P <port> <source-file> localuser@services-uscentral.skytap.com:<target-path
 For Windows use WinSCP or equivalent tool
 
 
-[Go back to the Table of Content](../../README.md)
+[Go back to the Table of Contents](../../README.md)
 
 <table>
   <tr>

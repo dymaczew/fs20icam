@@ -1,18 +1,18 @@
 # Exercise 1 Adding a managed cluster
 
-[Go back to the Table of Content](../../README.md)
+[Go back to the Table of Contents](../../README.md)
 
 During this lab, MCM klusterlet is deployed to a managed cluster on a multi-tenant environment.
 
 ## Login to IBM CloudPak for Multicloud Management console
 
-### 1. On you workstation open a browser and point it to https://icp-console.apps.169.61.23.248.nip.io
+### 1. On you workstation open a browser and point it to <a href="https://icp-console.apps.169.61.23.248.nip.io" target="_blank">https://icp-console.apps.169.61.23.248.nip.io</a>
 
 ### 2. Login with the credentials given you by the instructors
 
 ![](images/2020-01-11-12-47-43.png)
 
-### 3. Open **Menu**, then **Automate infrastructure** then **Clusters**
+### 3. Open **Menu** > **Automate infrastructure** > **Clusters**
 
 ![](images/2020-01-11-13-07-46.png)
 
@@ -29,6 +29,8 @@ During this lab, MCM klusterlet is deployed to a managed cluster on a multi-tena
 Edit the **Cluster import YAML file** to: 
  - uncomment ```environment``` and ```region``` clusterLabels 
  - disable prometheusIntegration
+
+DO NOT change the envrionment label to Production at this point! You will first deploy configpak secret in the later exercise.
 
 ![](images/2020-01-13-12-32-32.png)
 
@@ -93,7 +95,7 @@ ibm-multicluster-endpoint-operator-854f9b7cbb-jscjk   1/1     Running           
 
 This concludes the exercise. You now have a kubernetes cluster that can be managed by MCM and monitored by ICAM.
 
-[Go back to the Table of Content](../../README.md)
+[Go back to the Table of Contents](../../README.md)
 
 <table>
   <tr>

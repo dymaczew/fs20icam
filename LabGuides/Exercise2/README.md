@@ -6,7 +6,7 @@ In this exercise, you will be instrumenting your managed cluster with the kubern
 
 ## Gather config-pak for your tenant
 
-### 1. In the browser window where you are logged in to IBM Cloud Pak for Multicloud Management open top-left menu and select **Monitor health** and **Incidents**
+### 1. In the browser window where you are logged in to IBM Cloud Pak for Multicloud Management open top-left menu and select **Monitor health** > **Incidents**
 
 ![](images/2020-01-11-15-49-50.png)
 
@@ -41,6 +41,9 @@ scp -P <port> ibm-cloud-apm-dc-configpack.tar  localuser@services-uscentral.skyt
 ### 8. In the terminal window where you are connected to managed cluster run the following commands, adjusting the **cluster_name** value
    
 **ATTENTION: Remember to change the cluster_name in the command!**   
+
+*HINT: If you are using Windows, first copy the lines to Notepad, edit the username and then copy/paste to Putty window*
+
 <pre>
 cd /home/localuser/install/app_mgmt_k8sdc
 ansible-playbook helm-main.yaml --extra-vars="<b>cluster_name=user1</b> release_name=icam-kubernetes-resources \

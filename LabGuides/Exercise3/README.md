@@ -1,6 +1,6 @@
 # Exercise 3 Installing the Bookinfo app into your managed cluster
 
-[Go back to the Table of Content](../../README.md)
+[Go back to the Table of Contents](../../README.md)
 
 ## Preparing a namespace
 
@@ -32,6 +32,8 @@ kubectl -n bookinfo create secret generic icam-server-secret \
 
 ![](images/2020-01-14-23-00-16.png)
 
+*EXPLANATION: You may wonder why not to assign the environment=Production label while registering the cluster. The reason is that we wanted you to first create the icam-server-secret in a target namespace, what you just did in the Step 2 above. If you reverse the order, after creating the secret you would have to restart the application pods so the data collectors pick it up*
+
 This change makes your cluster match the placementrule for Bookinfo application subscription. The deployment is automatically triggered by subscription controller installed on Multicluster Management hub.
 
 ### 4. On the managed cluster observe the bookinfo app being deployed
@@ -42,7 +44,7 @@ kubectl get pods -n bookinfo
 
 This conludes the exercise. Now you have a managed cluster that has Kubernetes data collector installed and instrumented Bookinfo application that is deployed to that cluster.
 
-[Go back to the Table of Content](../../README.md)
+[Go back to the Table of Contents](../../README.md)
 
 <table>
   <tr>

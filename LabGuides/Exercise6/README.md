@@ -1,6 +1,6 @@
 # Exercise 6 Exploring Kubernetes Resources and Dashboards
 
-[Go back to the Table of Content](../../README.md)
+[Go back to the Table of Contents](../../README.md)
 
 ## Exploring the Resources Page
 
@@ -52,7 +52,7 @@ So far, we have explored kubernetes infrastructure metrics. Using Site Reliabili
 
 This concludes the exercise.
 
-[Go back to the Table of Content](../../README.md)
+[Go back to the Table of Contents](../../README.md)
 
 <table>
   <tr>
@@ -65,6 +65,6 @@ This concludes the exercise.
   </tr>
   <tr>
     <td>email</td>
-    <td>sean.lombardo.ibm.com</td>
+    <td>sean.lombardo@ibm.com</td>
   </tr>
 </table>

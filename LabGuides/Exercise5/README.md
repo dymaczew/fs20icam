@@ -1,5 +1,7 @@
 # Exercise 5 Instrumenting a new microservice using Appsody
 
+[Go back to the Table of Contents](../../README.md)
+
 ## Installing the Appsody 
 
 Normally you install Appsody on the development environment - typically your local workstation. However for the course of this lab you will use the managed cluster to install and run Appsody (More dedicated Appsody and Kabanero labs are planned in other sessions)
@@ -185,7 +187,7 @@ It may take a while until data actually shows in UI as some of the data are aggr
 
 This concludes the exercise.
 
-[Go back to the Table of Content](../../README.md)
+[Go back to the Table of Contents](../../README.md)
 
 <table>
   <tr>

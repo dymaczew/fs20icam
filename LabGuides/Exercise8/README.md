@@ -1,6 +1,6 @@
 # Exercise 8 Creating a Resource Group
 
-[Go back to the Table of Content](../../README.md)
+[Go back to the Table of Contents](../../README.md)
 
 Your monitored environment might have multiple managed resources that can be categorized by their purpose. Such resources often have the same threshold requirements. Use the Resource groups management page to organize managed resources into groups that you can easily and quickly access. You can also assign thresholds to resource groups for monitoring the managed resources of the same type that belong to the group.
 
@@ -38,7 +38,7 @@ Click on Bookinfo to see the resources that you added to it.
 
 This concludes the exercise.
 
-[Go back to the Table of Content](../../README.md)
+[Go back to the Table of Contents](../../README.md)
 
 <table>
   <tr>
@@ -51,6 +51,6 @@ This concludes the exercise.
   </tr>
   <tr>
     <td>email</td>
-    <td>sean.lombardo.ibm.com</td>
+    <td>sean.lombardo@ibm.com</td>
   </tr>
 </table>

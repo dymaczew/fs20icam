@@ -1,6 +1,6 @@
 # Exercise 7 Creating a custom Event Policy, Incident Policy, and Threshold
 
-[Go back to the Table of Content](../../README.md)
+[Go back to the Table of Contents](../../README.md)
 
 Before moving into this section, lets define some terms:
 
@@ -45,29 +45,35 @@ As mentioned earlier, there are two types of policies, Event policies and Incide
 
 In the Policies page you will see a couple “Event policies” that have already been created.  In this section, you will create an event policy that will associate a runbook with an incident.
 
-Within the Event polidy tab, select Create event policy and provide the following values:
+Within the Event policy tab, select Create event policy and provide the following values:
+
+Under Details:
+- Policy name: pythonReqHighResponseTimePolicy
+- Provide description of your choice.
+
+Under Events:
+- Select **Specify Conditions**
+  - Under **Condtion 1**:
+    - Select Attribute: Summary
+    - Select Operator: contains
+    - Specify Value: pythonReqHighResponseTime
+
+Under Actions:
+- Select **Enrich**
+- Select Attribute: Summary
+- Select Operator: =
+- Specify Value: Python requests are responding slowly
+- Select Prepend to field
+
+Under Enable:
+- Click **On** to enable the Event Policy
+- Click **Save**
+
 
 ![](images/2020-01-16-16-31-41.png)
+
 ![](images/2020-01-16-16-32-45.png)
 
-    •	Under Details:
-        o	Policy name: pythonReqHighResponseTimePolicy
-        o	Provide description of your choice.
-    •	Under Events:
-        o	Select Specify Conditions
-        o	Under Condtion 1: 
-            	Select Attribute: Summary
-            	Select Operator: contains
-            	Specify Value: pythonReqHighResponseTime
-    •	Under Actions:
-        o	Select Enrich 
-            	Select Attribute: Summary
-            	Select Operator: =
-            	Specify Value: Python requests are responding slowly
-            	Select Prepend to field
-    •	Under Enable:
-        o	Click On to enable the Event Policy
-    •	Click Save
 In the policy conditions, you can specify a set of AND and OR conditions to ensure that your policy get processed on the correct events.  In this case, the policy will get processed if any event contains "pythonReqHighResponseTime" in the summary. 
 
 Notice that there is a "Test" button that allows you to verify whether you policy conditions are setup correctly.
@@ -89,26 +95,29 @@ Click the Incident Policy tab, then click Create Incident Policy and provide the
 ![](images/2020-01-16-16-57-21.png)
 ![](images/2020-01-16-16-58-23.png)
 
-    •	Under Details:
-        o	Policy name: PythonEventIncidentPolicies
-        o	Provide description of your choice.
-    •	Under Incidents:
-        o	Select Specify conditions:
-            	Attribute: Priority
-            	Condition: is higher than or equal to
-            	Priority 5 (which is the lowest)
-        o	Select Add condition to describe incident events:
-            	Select attribute: Resource type 
-            	Select operator: is 
-            	Specify value: pythonApplicationRuntime
-        o	Click Test
-            	Click Show results if any incidents would have been created
-    •	Under Action:
-        o	Select Set priority
-            	Select Priority 1
-    •	Under Enable:
-        o	Click On
-    •	Click Save
+Under Details:
+- Policy name: PythonEventIncidentPolicies
+- Provide description of your choice.
+
+Under Incidents:
+- Select Specify conditions:
+    - Attribute: Priority
+    - Condition: is higher than or equal to
+    - Priority 5 (which is the lowest)
+- Select Add condition to describe incident events:
+    - Select attribute: Resource type 
+    - Select operator: is 
+    - Specify value: pythonApplicationRuntime
+- Click Test
+    - Click Show results if any incidents would have been created
+
+Under Action:
+  - Select Set priority
+  - Select Priority 1
+
+Under Enable:
+   - Click On
+   - Click **Save**
 
 Notice that Incident policies have other options.  For example, in the "Assign and notify" section, you can configure ICAM to notify people when the incident opens.  For example, send an e-mail to the python DevOps team.
 
@@ -138,23 +147,27 @@ Now, let’s create our own custom Threshold.  Click Create in the upper right a
 ![](images/2020-01-16-17-23-37.png)
 ![](images/2020-01-16-17-24-25.png)
 
-    •	Under Details:
-        o	Type pythonReqHighResponseTimePolicy for the policy name 
-        Hint: doublecheck this entry.  It must match the Event Policy for the Runbook to match.
-        o	Provide a description of your choice
-    •	Under Threshold:
-        o	Clear the current selection for Resource type by clicking the blue   and select Python Application Runtime under the resource type pull-down
-        o	Select critical under the severity pull-down.
-        o	Select 1 under Consecutive samles.
-    •	Under Condition 1
-        o	Select Request Average Response Time
-        o	Select >= on the Condition
-        o	Type 10 for the value.  Note, this is an artificially low value to force the threshold to be true.		
-    •	Under Assignments:
-        o  	Select All Python Application Runtime
-    •	Under Enable:
-        o	Toggle to Enabled 
-    •	Click Save and Finish
+Under Details:
+- Type pythonReqHighResponseTimePolicy for the policy name 
+        *Hint: doublecheck this entry.  It must match the Event Policy for the Runbook to match.*
+- Provide a description of your choice
+
+Under Threshold:
+- Clear the current selection for Resource type by clicking the blue   and select Python Application Runtime under the resource type pull-down
+- Select critical under the severity pull-down.
+- Select 1 under Consecutive samles.
+
+Under Condition 1
+- Select Request Average Response Time
+- Select >= on the Condition
+- Type 10 for the value.  Note, this is an artificially low value to force the threshold to be true.		
+
+Under Assignments:
+- Select All Python Application Runtime
+
+Under Enable:
+- Toggle to Enabled 
+- Click **Save** and **Finish**
 
 Observe the new threshold in the list of thresholds, and confirm it is both Editable and Enabled.
 
@@ -164,7 +177,7 @@ Depending on the performance characteristics of your bookinfo application, the t
 
 This concludes the exercise.
 
-[Go back to the Table of Content](../../README.md)
+[Go back to the Table of Contents](../../README.md)
 
 <table>
   <tr>
@@ -177,6 +190,6 @@ This concludes the exercise.
   </tr>
   <tr>
     <td>email</td>
-    <td>sean.lombardo.ibm.com</td>
+    <td>sean.lombardo@ibm.com</td>
   </tr>
 </table>

@@ -53,9 +53,9 @@ For the request method we need to select the drop-down and click on **POST** as 
 ### 7. Providing Data source URL
 
 You can pick any REST API you want in this exercise. I have provided an external URL for a test API interface which will allow you to run the test and see the data coming back.  In the URL box type:
-
-`https://petstore.swagger.io/v2/store/order`
-
+<pre>
+<b>https://petstore.swagger.io/v2/store/order</b>
+</pre>
 Note: If you want to see the data first before creating the test, enter the URL into a separate browser window and you can view its structure and information.
 
 ![](images/2020-01-20-08-56-41.png)
@@ -127,7 +127,7 @@ This section will allow you to pick the sites from across the globe from which y
 
 ### 15. Editing Event Triggers
 
-This is where you can set whether a failed response triggers a critical alert. A failed response is when the test returns a code 400 or above.  For this exercise we are going to set the slider bar to “Off”.
+This is where you can set whether a failed response triggers a critical alert. A failed response is when the test returns a code 400 or above.  For this exercise we are going to set the slider bar to “On”.
 
 You can also set how many times the test threshold is breached before the event is sent. Again, this is going to be left at “0” for this exercise.
 

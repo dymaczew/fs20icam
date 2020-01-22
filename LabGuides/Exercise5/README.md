@@ -77,6 +77,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: newapp
+  namespace: default
   labels:
     app.kubernetes.io/name: newapp
 spec:
@@ -94,6 +95,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: newapp
+  namespace: default
   labels:
     app.kubernetes.io/name: newapp
 spec:

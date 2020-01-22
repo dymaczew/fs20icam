@@ -16,7 +16,15 @@ cd /home/localuser/install
 sudo apt-get install -y ./appsody_0.5.4_amd64.deb
 ```
 
-### 2. Generating and deploying a new microservice
+### 2. Adding customized stack repo and generating a new microservice
+
+Appsody stacks may or may not be instrumented with the latest data collectors. In order to have a full control over the stacks used in your organization, you may create your own versions of the public stacks, accomodating any changes that your organization may need. As an example we have created a custom copy of nodejs-express stack and added the latest data collector to it.
+
+Add the `fs20` repo containing this customized stack to your local Appsody environment
+
+```
+appsody repo add fs20 https://raw.githubusercontent.com/dymaczew/stacks/master/incubator/fs20-index.yaml
+```
 
 In order to generate a new Node.js microservice create a new directory and run the appsody init there.
 
@@ -24,12 +32,12 @@ In order to generate a new Node.js microservice create a new directory and run t
 cd
 mkdir newapp
 cd newapp
-appsody init nodejs-express
+appsody init fs20/fs20-nodejs-express
 ```
 
 ### 3. Building and deploying the microservice to the managed cluster
 
-You can review the sample application app.js. It is very simple - there is nothing special in the JavaScript code. The runtime instrumentation is embedded in the docker.io/appsody/nodejs-express:0.4 container that is used for building target container for your microservice. 
+You can review the sample application app.js. It is very simple - there is nothing special in the JavaScript code. The runtime instrumentation is embedded the template, which you can review here: [https://github.com/dymaczew/stacks](https://github.com/dymaczew/stacks) 
 
 To build the application run the following command
 ```
@@ -138,7 +146,7 @@ spec:
           secretName: icam-server-secret</b>
 </pre>
 
-Parts marked in **bold** instruct the data collector where to get the ICAM configuration information from, and how much of the traffic should be sampled (in percent). JAEGER_SAMPLER_PARAM and LATENCY_SAMPLER_PARAM variables accept decimal values in range from 0 to 1, eg 0.33 means 1/3 of request will be sampled. Value of 1 means that all the requests should be measured, which makes sense only in test/demo environments.
+Parts marked in **bold** instruct the data collector where to get the ICAM configuration information from, and how much of the traffic should be sampled (in percent). OPENTRACING_SAMPLER and LATENCY_SAMPLER_PARAM variables accept decimal values in range from 0 to 1, eg 0.33 means 1/3 of request will be sampled. Value of 1 means that all the requests should be measured, which makes sense only in test/demo environments.
 
 Create the deployment using kubectl
 ```
@@ -181,9 +189,9 @@ On the next screen click the **newapp** service.
 
 You can see that data reported by NodeJS data collector embedded in newapp microservice are propagated and presented as Golden Signals at the newapp service level.
 
-![](images/2020-01-16-19-27-19.png)
+![](images/2020-01-22-12-48-15.png)
 
-It may take a while until data actually shows in UI as some of the data are aggregated in the background and presented after as specific period - eg. 5 minutes.
+It may take a while until data actually shows in UI as some of the data are aggregated in the background and presented after as specific period - eg. 5 minutes. If you cannot see Golden Signals data after this time, refresh the page in the browser.
 
 This concludes the exercise.
 

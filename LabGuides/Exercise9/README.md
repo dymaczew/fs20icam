@@ -16,7 +16,7 @@ In the Thresholds page you will see a list of all of the out of the box threshol
 
 ![](images/2020-01-17-09-41-16.png)
 
-The column headings for the Thersholds table are defined below:
+The column headings for the Thresholds table are defined below:
 
 •	**Name** is the title given to the threshold when it was saved. Click the name to view and change the     definition in the threshold editor page.
 

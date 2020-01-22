@@ -115,7 +115,7 @@ To expore any other metric, scroll down the page and expand the **Custom metrics
 
 ![](images/2020-01-20-08-47-50.png)
 
-This concludes the exercise. You now understand who to naviagate Golden Signals view.
+This concludes the exercise. You now understand how to naviagate Golden Signals view.
 
 Additional resources: 
 - [Golden Signals video on YouTube](https://youtu.be/z5WLD6vANvw)

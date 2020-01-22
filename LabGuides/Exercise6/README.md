@@ -1,4 +1,4 @@
-# Exercise 6 Exploring Kubernetes Resources and Dashboards
+# Exploring Kubernetes Resources and Dashboards
 
 [Go back to the Table of Contents](../../README.md)
 
@@ -16,13 +16,13 @@ Let’s look at the Kubernetes resources.  Like we did in the last exercise, cli
 
 ![](images/2020-01-16-14-50-29.png)
 
-Within the list, click on the link with the name of your cluster.  You will see a page showing information about the Kubernetes Cluster.   
+Within the list, click on the link with the name of your cluster that you used when you imported it.  You will see a page showing information about the kubernetes cluster.
 
-![](images/2020-01-16-14-53-50.png)
+![](images/2020-01-22-09-28-04.png)
 
-The most important element is the widget on the left side showing the topology of the Kubernetes environment.
+The most important element is the widget on the left side showing the topology of the kubernetes environment.
 
-![](images/2020-01-16-14-56-16.png)
+![](images/2020-01-22-09-31-13.png)
 
 In your lab environment, the cluster is very simple.  Your managed cluster contains a single node.
 

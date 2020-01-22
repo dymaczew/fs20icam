@@ -1,4 +1,4 @@
-# Exercise 9 Exploring Thresholds
+# Exploring Thresholds
 
 [Go back to the Table of Contents](../../README.md)
 

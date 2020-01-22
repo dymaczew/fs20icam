@@ -1,4 +1,4 @@
-# Exercise 7 Creating a custom Event Policy, Incident Policy, and Threshold
+# Creating a custom Event Policy, Incident Policy, and Threshold
 
 [Go back to the Table of Contents](../../README.md)
 
@@ -48,7 +48,7 @@ In the Policies page you will see a couple “Event policies” that have alread
 Within the Event policy tab, select Create event policy and provide the following values:
 
 Under Details:
-- Policy name: pythonReqHighResponseTimePolicy
+- Policy name: `pythonReqHighResponseTimePolicy`
 - Provide description of your choice.
 
 Under Events:
@@ -56,13 +56,13 @@ Under Events:
   - Under **Condtion 1**:
     - Select Attribute: Summary
     - Select Operator: contains
-    - Specify Value: pythonReqHighResponseTime
+    - Specify Value: `pythonReqHighResponseTime`
 
 Under Actions:
 - Select **Enrich**
 - Select Attribute: Summary
 - Select Operator: =
-- Specify Value: Python requests are responding slowly
+- Specify Value: `Python requests are responding slowly`
 - Select Prepend to field
 
 Under Enable:
@@ -92,11 +92,8 @@ The numbering of policies in the table shows the order in which they are applied
 
 Click the Incident Policy tab, then click Create Incident Policy and provide these values:
 
-![](images/2020-01-16-16-57-21.png)
-![](images/2020-01-16-16-58-23.png)
-
 Under Details:
-- Policy name: PythonEventIncidentPolicies
+- Policy name: `PythonEventIncidentPolicies`
 - Provide description of your choice.
 
 Under Incidents:
@@ -107,7 +104,7 @@ Under Incidents:
 - Select Add condition to describe incident events:
     - Select attribute: Resource type 
     - Select operator: is 
-    - Specify value: pythonApplicationRuntime
+    - Specify value: `pythonApplicationRuntime`
 - Click Test
     - Click Show results if any incidents would have been created
 
@@ -118,6 +115,10 @@ Under Action:
 Under Enable:
    - Click On
    - Click **Save**
+
+
+![](images/2020-01-16-16-57-21.png)
+![](images/2020-01-16-16-58-23.png)
 
 Notice that Incident policies have other options.  For example, in the "Assign and notify" section, you can configure ICAM to notify people when the incident opens.  For example, send an e-mail to the python DevOps team.
 
@@ -144,11 +145,8 @@ Then click the Thresholds tile.
 In the Thresholds page you will see a list of all of the out of the box thresholds that come with ICAM.  
 Now, let’s create our own custom Threshold.  Click Create in the upper right and provide these values:
 
-![](images/2020-01-16-17-23-37.png)
-![](images/2020-01-16-17-24-25.png)
-
 Under Details:
-- Type pythonReqHighResponseTimePolicy for the policy name 
+- Type `pythonReqHighResponseTimePolicy` for the policy name 
         *Hint: doublecheck this entry.  It must match the Event Policy for the Runbook to match.*
 - Provide a description of your choice
 
@@ -160,7 +158,7 @@ Under Threshold:
 Under Condition 1
 - Select Request Average Response Time
 - Select >= on the Condition
-- Type 10 for the value.  Note, this is an artificially low value to force the threshold to be true.		
+- Type `10` for the value.  Note, this is an artificially low value to force the threshold to be true.		
 
 Under Assignments:
 - Select All Python Application Runtime
@@ -168,6 +166,9 @@ Under Assignments:
 Under Enable:
 - Toggle to Enabled 
 - Click **Save** and **Finish**
+
+![](images/2020-01-16-17-23-37.png)
+![](images/2020-01-16-17-24-25.png)
 
 Observe the new threshold in the list of thresholds, and confirm it is both Editable and Enabled.
 

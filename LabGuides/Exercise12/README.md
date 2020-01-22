@@ -1,4 +1,4 @@
-# Exercise 12 Exploring the Golden Signals
+# Exploring the Golden Signals
 
 [Go back to the Table of Contents](../../README.md)
 
@@ -86,9 +86,8 @@ The view you see comes from an embedded capability called Agile Service Manager 
 
 Let's start by switching to a 2-hop topology.  Select the dropdown in the top-middle of the screen and change the value to "2".  Then click "Render"
 
-![](images/2020-01-20-08-35-09.png)
+![](images/2020-01-22-09-51-29.png)
 
-*EXPLANATION: Your view might be slightly different (without a bookinfo-demo icon). This icon represents the ingress and your managed cluster does not have ingress installed so this resource doesn't show up*
 
 We won't examine it here, but ASM allows you to hide/show some additional objects in the topology.  In this topology, you see the microservice topology.  If you want, you can add the pods into the topology.  To add/hide elements on the page, click the **Filter** icon to the left of the "Render" button.
 

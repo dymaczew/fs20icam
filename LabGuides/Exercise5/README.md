@@ -1,4 +1,4 @@
-# Exercise 5 Instrumenting a new microservice using Appsody
+# Instrumenting a new microservice using Appsody
 
 [Go back to the Table of Contents](../../README.md)
 

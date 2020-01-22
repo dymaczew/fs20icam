@@ -1,4 +1,4 @@
-# Exercise 11 Exploring Integrations
+# Exploring Integrations
 
 [Go back to the Table of Contents](../../README.md)
 

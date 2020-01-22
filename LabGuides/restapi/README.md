@@ -44,7 +44,7 @@ As we want to monitor a REST API we will select the **REST API** tile.
 
 ![](images/2020-01-20-07-50-45.png)
 
-### 6. Selectimng Request Method
+### 6. Select Request Method
 
 For the request method we need to select the drop-down and click on **POST** as we want to get data in the response to our test.
 

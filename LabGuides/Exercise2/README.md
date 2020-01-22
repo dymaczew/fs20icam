@@ -1,6 +1,6 @@
 # Exercise 2 Install k8s monitor to the managed cluster
 
-[Go back to the Table of Content](../../README.md)
+[Go back to the Table of Contents](../../README.md)
 
 In this exercise, you will be instrumenting your managed cluster with the kubernetes data collector (k8monitor).  The kubernetes data collector will provide detailed monitoring about the performance and health of the entire kubernetes cluster including the nodes, pods, containers, ingress, and more.
 
@@ -32,7 +32,7 @@ In this exercise, you will be instrumenting your managed cluster with the kubern
 
 ### 7. Copy the config file to the managed cluster (Remember to change the port number to one matching your environment instance)
 
-Kubernetes data collector media has already been extracted to /home/localuser/install/app_mgmt_k8sdc.  In this step, you are going to copy the configpack into the same directory as the kubernetes data collector.
+Kubernetes data collector media has already been extracted to /home/localuser/install/app_mgmt_k8sdc.  In this step, you are going to copy the configpack into the same directory as the kubernetes data collector. If you have a Windows workstation, you can also use your favorite SCP tool like Filezilla or WinSCP.
 
 ```
 scp -P <port> ibm-cloud-apm-dc-configpack.tar  localuser@services-uscentral.skytap.com:/home/localuser/install/app_mgmt_k8sdc
@@ -69,7 +69,7 @@ icam-kubernetes-resources-k8monitor-54876594c5-9xvzs   2/2     Running   0      
 
 This concludes the exercise. Your managed cluster has now the Kubernetes data collector deployed and reports data back to the IBM CLoud App Management server. In the next exercise you will explore what data is monitored for different resource types. 
 
-[Go back to the Table of Content](../../README.md)
+[Go back to the Table of Contents](../../README.md)
 
 <table>
   <tr>

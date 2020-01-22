@@ -1,4 +1,4 @@
-# Exercise 8 Creating a Resource Group
+# Creating a Resource Group
 
 [Go back to the Table of Contents](../../README.md)
 
@@ -32,7 +32,7 @@ Navigate to the Resources page. Select the "Resource groups" tab and you will se
 
 ![](images/2020-01-17-08-19-39.png)
 
-Click on Bookinfo to see the resources that you added to it.
+Click on "Bookinfo" to see the resources that you added to it.
 
 ![](images/2020-01-17-08-17-25.png)
 

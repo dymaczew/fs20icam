@@ -1,6 +1,6 @@
-# Exercise 10 Creating a Runbook
+# Creating a Runbook
 
-[Go back to the Table of Content](../../README.md)
+[Go back to the Table of Contents](../../README.md)
 
 Runbooks help you to simplify and automate repetitive tasks. This helps overcome organizational complexity, varying skill sets, confusing alert noise and reliance on too much manual effort, all of which contribute to delays, disruption and risk of error. 
 
@@ -25,7 +25,9 @@ Once there, click on the Runbooks tile:
 
 ![](images/2020-01-17-10-50-25.png)
 
-On the Runbooks page you will be on the Library tab and you will see several example runbooks that come with ICAM out of the box. You are free to enable, customize and use these in your own environment if you so choose.  The other tabs available are Execution, Automation, Triggers and Connections.  We will not be working with these functions, but they are defined below.
+On the Runbooks page you will be on the Library tab, but there aren't any runbooks configured yet. Click the "Load Examples +" button and you will see several example runbooks that come with ICAM out of the box. You are free to enable, customize and use these in your own environment if you so choose.  The other tabs available are Execution, Automation, Triggers and Connections.  We will not be working with these functions, but they are defined below.
+
+![](images/2020-01-22-10-37-58.png)
 
 ### Execution
   This is where you can find all runbooks that have been started, including runbooks that are in progress.
@@ -62,23 +64,23 @@ Next create “Parameters” for the username and password for the oc login comm
 
 ![](images/2020-01-17-14-01-30.png)
 
-In the “New parameter” window that opens, enter your username information as shown below:
+In the “New parameter” window that opens, enter your username `admin` as shown below:
 
 ![](images/2020-01-17-14-02-45.png)
 
-Then do the same for password, clicking the + and entering Passw0rd! for the value.
+Then do the same for password, clicking the + and entering `Passw0rd!` for the value.
 
 Now click inside the Procedure window and start inserting Step separators by typing Ctrl+3.  There are four basic steps to this process so enter 4 step separators.
 
 ![](images/2020-01-17-14-07-00.png)
 
-Next add a description to Step 1 and then click “Add command” and enter su -i
+Next add a description to Step 1 and then click “Add command” and enter `su -i`
 
 ![](images/2020-01-17-14-08-06.png)
 
 For Step 2 we will log in to Openshift.  After adding a description you will need to add another “Add command” action.  Enter this command:
 
-Type:  oc login -u username -p password
+Type:  `oc login -u username -p password`
 
 Where username and password are the parameters you defined.  To add the username and password parameters, drag them from the menu on the right, using the 6 dots next to the name, and drop them onto the command line. 
 
@@ -88,13 +90,13 @@ Where username and password are the parameters you defined.  To add the username
 
 Step 3 will ensure that you are in the correct project/namespace to execute the upscale procedure. Enter a description then add another “Add command” action.  Enter this command:
 
-Type:  oc project bookinfo-app
+Type:  `oc project bookinfo-app`
 
 ![](images/2020-01-17-14-14-41.png)
 
 The final step will scale the mysql database up from zero replicas to one.  Enter a description then add another “Add command” action.  Enter this command:
 
-Type: kubectl scale deployment --replicas=1 mysqldb-v1
+Type: `kubectl scale deployment --replicas=1 mysqldb-v1`
 
 ![](images/2020-01-17-14-16-23.png)
 
@@ -122,7 +124,7 @@ Give the runbook your rating and then click “Runbook worked”.
 
 This concludes the exercise.
 
-[Go back to the Table of Content](../../README.md)
+[Go back to the Table of Contents](../../README.md)
 
 <table>
   <tr>

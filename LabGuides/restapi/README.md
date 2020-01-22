@@ -1,4 +1,4 @@
-# Exercise Creating REST testing script
+# Creating REST testing script
 
 [Go back to the Table of Contents](../../README.md)
 

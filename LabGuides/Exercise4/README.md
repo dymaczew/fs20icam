@@ -81,7 +81,7 @@ Click **Create** button
 
 ![](images/2020-01-15-13-33-53.png)
 
-Give your test a name
+Give your test a name and description.
 
 ![](images/2020-01-15-13-35-24.png)
 

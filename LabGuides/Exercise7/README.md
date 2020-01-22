@@ -148,7 +148,8 @@ Now, let’s create our own custom Threshold.  Click Create in the upper right a
 Under Details:
 - Type `pythonReqHighResponseTimePolicy` for the policy name 
         *Hint: doublecheck this entry.  It must match the Event Policy for the Runbook to match.*
-- Provide a description of your choice
+- Provide a description of your choice 
+  *Note that description is mandatory.*
 
 Under Threshold:
 - Clear the current selection for Resource type by clicking the blue   and select Python Application Runtime under the resource type pull-down

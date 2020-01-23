@@ -70,7 +70,7 @@ kubectl -n default create secret generic icam-server-secret \
 cd $LOCALDIR
 ```
 
-Create the deployment.yaml using the following content
+Create the `deployment.yaml` using the following content
 
 <pre>
 apiVersion: v1
@@ -148,9 +148,16 @@ spec:
           secretName: icam-server-secret</b>
 </pre>
 
-Parts marked in **bold** instruct the data collector where to get the ICAM configuration information from, and how much of the traffic should be sampled (in percent). OPENTRACING_SAMPLER and LATENCY_SAMPLER_PARAM variables accept decimal values in range from 0 to 1, eg 0.33 means 1/3 of request will be sampled. Value of 1 means that all the requests should be measured, which makes sense only in test/demo environments.
+Parts marked in **bold** instruct the data collector where to get the ICAM configuration information from, and how much of the traffic should be sampled (in percent). OPENTRACING_SAMPLER and LATENCY_SAMPLER_PARAM variables accept decimal values in range from 0 to 1, eg 0.33 means 1/3 of requests will be sampled. Value of 1 means that all the requests should be measured, which makes sense only in test/demo environments.
 
-Create the deployment using kubectl
+*Additional info:*
+*It is NOT the case in our lab environment - but if you would deploy to some real environment, you would need 2 addional elements:*
+- *service account that is granted access rights to selected k8s resources [documentation](https://www.ibm.com/support/knowledgecenter/en/SS8G7U_19.4.0/com.ibm.app.mgmt.doc/content/dc_config_authorize.html?cp=SSFC4F_1.2.0#authorize_data_collector)*
+- *ClusterImagePolicy that would allow to run the image from new source [documentation](https://www.ibm.com/support/knowledgecenter/en/SSFC4F_1.2.0/mcm/compliance/image_policy_signing.html#no_wl)*
+
+
+
+### Create the deployment using kubectl
 ```
 kubectl create -f deployment.yaml 
 

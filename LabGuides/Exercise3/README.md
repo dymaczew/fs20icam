@@ -2,6 +2,10 @@
 
 [Go back to the Table of Contents](../../README.md)
 
+In this exercise you will deploy sample application called Bookinfo. Bookinfo is built using cloud-native architecture and consists of 5 microservices, written in different languages and communicating over REST APIs. The diagram below illustrates the application architecture
+
+![](images/2020-01-26-10-18-27.png)
+
 ## Preparing a namespace
 
 ### 1. In the terminal window connected to managed cluster run the following command

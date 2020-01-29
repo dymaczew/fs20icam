@@ -23,9 +23,9 @@ To access the Hub cluster open a browser on your workstation and point it to:
 
 To access the managed cluster you need a terminal with SSH client. On Mac or Linux workstation use a regular terminal, on Windows use Putty
 
-Open the Session URL given you by instructor. You should see the form similar to the one shown below:
+Open the [https://ibm.biz/fs20skytap](https://ibm.biz/fs20skytap) link given you by instructor. You should see the form similar to the one shown below:
 
-![](images/2020-01-20-13-57-59.png)
+![](images/2020-01-29-13-43-41.png)
 
 Provide you email address and click **Login**. Then, provide the code given you by instructor and click **Register**
 

@@ -4,6 +4,5 @@
 
 ## The lab can be accessed from the following URL:
 
-### http://faststart2020.noilabs.com/aiops
-
+<a href="http://faststart2020.noilabs.com/aiops" target="_blank">http://faststart2020.noilabs.com/aiops</a>
 

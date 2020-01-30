@@ -44,7 +44,7 @@ Testing with Selenium demo
 
 [Creating a Runbook](./LabGuides/Exercise10/README.md)
 
-AIOps demo
+[Using AIOps to speed up incident resolution](./LabGuides/AIOps/README.md)
 
 <table>
   <tr>

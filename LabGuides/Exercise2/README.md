@@ -40,14 +40,14 @@ scp -P <port> ibm-cloud-apm-dc-configpack.tar  localuser@services-uscentral.skyt
 
 ### 8. In the terminal window where you are connected to managed cluster run the following commands, adjusting the **cluster_name** value
    
-**ATTENTION: Remember to change the cluster_name in the command!**   
+<span style="color:red">**ATTENTION: Remember to change the cluster_name in the command!**</span>
 
 *HINT: If you are using Windows, first copy the lines to Notepad, edit the username and then copy/paste to Putty window*
 
 <pre>
 cd /home/localuser/install/app_mgmt_k8sdc
-ansible-playbook helm-main.yaml --extra-vars="<b>cluster_name=user1</b> release_name=icam-kubernetes-resources \
-docker_registry=edge-server.demo:8500 namespace=default docker_group=default tls_enabled=true"
+ansible-playbook helm-main.yaml --extra-vars="release_name=icam-kubernetes-resources namespace=default  \
+docker_registry=edge-server.demo:8500 docker_group=default tls_enabled=true <span style="color:red"><b>cluster_name=user1</b></span>"
 </pre>
 
 Ansible playbook should finish with the following line
@@ -67,7 +67,7 @@ NAME                                                   READY   STATUS    RESTART
 icam-kubernetes-resources-k8monitor-54876594c5-9xvzs   2/2     Running   0          48s
 ```
 
-This concludes the exercise. Your managed cluster has now the Kubernetes data collector deployed and reports data back to the IBM CLoud App Management server. In the next exercise you will explore what data is monitored for different resource types. 
+This concludes the exercise. Your managed cluster has now the Kubernetes data collector deployed and reports data back to the IBM Cloud App Management server. In the next exercise you will explore what data is monitored for different resource types. 
 
 [Go back to the Table of Contents](../../README.md)
 

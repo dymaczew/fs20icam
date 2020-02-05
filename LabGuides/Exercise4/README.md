@@ -99,19 +99,19 @@ kubectl get svc -n bookinfo |grep productpage |awk '{print "http://" $3 ":9080/p
    
 Scroll down and provide the following values:
 
-    URL: http://10.10.175.197:9080/productpage?u=normal   <--- Make sure you use the URL from above step
+    URL: http://10.10.187.169:9080/productpage?u=normal   <--- Make sure you use the URL from above step
 
     Threshold value for Warning: 1
 
     Threshold value for Critical: 2
 
-![](images/2020-01-15-13-47-21.png)
+![](images/2020-02-05-12-19-02.png)
 
 Click **Verify test**
 
 ![](images/2020-01-15-13-49-36.png)
 
-The test will timeout as your browser don't have access to that page, but the Synthetic PoP does have access. Ignore the pop-up dialog and click **Next**
+<span style="color:red">**ATTENTION:**</span> The test will timeout as your browser don't have access to that page, but the Synthetic PoP does have access. Ignore the pop-up dialog and click **Next**
 
 ![](images/2020-01-15-13-51-17.png)
 

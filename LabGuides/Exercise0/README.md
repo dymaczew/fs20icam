@@ -4,7 +4,7 @@
 
 For the FastStart 2020 labs related to the IBM Cloud Pak for Multicloud Management - IBM Cloud App Management component you will be using the central Hub server installed in IBM Cloud. This environment is setup to be multi-tenant where each student has their own isolated tenant.  Each student will have their own ICP cluster in Skytap that you will manage from the centralized Hub server.
 
-![](images/2020-02-13-11-07-52.png)
+![](images/2020-02-13-11-51-16.png)
 
 You connect to the hub using a web browser and userX assigned to you by lab instructor (each participant has unique id)
 

@@ -26,12 +26,12 @@ Enter a name for your PoP. Your PoP will be identified by this name: <span style
 The PoP name is set to pop_user1
 
 
-Enter the name of the country in which your PoP is located: <span style="color:orange"><b>Austria</b> <-- Use any country</span><br>
-The country name is set to Austria
+Enter the name of the country in which your PoP is located: <span style="color:orange"><b>USA</b> <-- Use any country</span><br>
+The country name is set to USA
 
 
-Enter the name of the city in which your PoP is located: <span style="color:orange"><b>Vienna</b> <-- Use any city</span><br>
-The city name is set to Vienna
+Enter the name of the city in which your PoP is located: <span style="color:orange"><b>Las Vegas</b> <-- Use any city</span><br>
+The city name is set to Las Vega
 
 
 Enter a description of your PoP (optional): <span style="color:orange"><b>FS20pop</b> <-- It is just descritpion</span><br>
@@ -47,7 +47,7 @@ Playback proxy type is set to no
 
 
 Your PoP is configured with the following details:
-LOCATION="pop_user1,Austria,Vienna,0,0,FS20pop"
+LOCATION="pop_user1,USA,Las Vegas,0,0,FS20pop"
 AGENT_PROXY_SERVER=""
 PLAYBACK_PROXY_TYPE="no"
 PLAYBACK_PROXY_HOST_PORT=""

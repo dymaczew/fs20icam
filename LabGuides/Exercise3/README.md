@@ -32,7 +32,13 @@ kubectl -n bookinfo create secret generic icam-server-secret \
 
 ### 3. Edit the **environment** label of the cluster in ICAM UI to value **Production**
 
+Highlight the row with your cluster name (hover mouse cursor over) and click the '...' icon that shows on the right. Select **Edit labels**. 
+
+![](images/2020-02-15-20-46-50.png)
+
 ![](images/2020-01-14-23-00-57.png)
+
+Click the row "environment=Dev" to enter edit mode. Change the value from *Dev* to *Production*. Click **Save**
 
 ![](images/2020-01-14-23-00-16.png)
 

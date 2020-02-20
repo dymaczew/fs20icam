@@ -21,17 +21,30 @@ In parallel you connect to a managed cluster via SSH with credentials: localuser
 
 To access the Hub cluster open a browser on your workstation and point it to:
 
+**Group A**
+
 <a href="https://icp-console.apps.169.61.23.248.nip.io" target="_blank">https://icp-console.apps.169.61.23.248.nip.io</a>
+
+**Group B**
+
+<a href="https://icp-console.icamfs2020-6550a99fb8cff23207ccecc2183787a9-0001.us-south.containers.appdomain.cloud" target="_blank">https://icp-console.icamfs2020-6550a99fb8cff23207ccecc2183787a9-0001.us-south.containers.appdomain.cloud</a>
+
 
 **ATTENTION: Lab tutorials were tested with Firefox browser.**
 
 ## Connecting to the managed cluster
 
+Go to [https://ibm.biz/fs20skytap](https://ibm.biz/fs20skytap) and register with the email and access code for the session.
+
 To access the managed cluster you need a terminal with SSH client. On Mac or Linux workstation use a regular terminal, on Windows use Putty
 
 <span style="color:red">**IT IS NOT RECOMMENDED TO USE SKYTAP UI TO CONNECT TO THE MACHINE - YOU WILL USE A TERMINAL CONNECTION DIRECTLY FROM YOUR WORKSTATION**</span>
 
-Take a note of address and the port number, next to the your name in Ben's invite. For example, it may be *services-uscentral.skytap.com* and *12316*. It is the SSH port exposed from the virtal machine for your instance (for managed cluster)
+You should see the page that looks like this
+
+![](images/2020-01-20-13-55-03.png)
+
+Take a note of address and the port number, next to the **managed-cluster** VM. In above example, it is *services-uscentral.skytap.com* and *12316*. It is the SSH port exposed from the virtal machine for your instance (for managed cluster)
 
 Open the terminal on your workstation. Connect to the VM using user **localuser** with password **passw0rd**
 

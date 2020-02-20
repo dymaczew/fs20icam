@@ -42,9 +42,9 @@ To access the managed cluster you need a terminal with SSH client. On Mac or Lin
 
 You should see the page that looks like this
 
-![](images/2020-01-20-13-55-03.png)
+![](images/2020-02-20-23-18-36.png)
 
-Take a note of address and the port number, next to the **managed-cluster** VM. In above example, it is *services-uscentral.skytap.com* and *12316*. It is the SSH port exposed from the virtal machine for your instance (for managed cluster)
+Take a note of address and the port number, next to the **managed-cluster** VM. In above example, it is *services-uscentral.skytap.com* and *20660*. It is the SSH port exposed from the virtal machine for your instance (for managed cluster)
 
 Open the terminal on your workstation. Connect to the VM using user **localuser** with password **passw0rd**
 
@@ -55,7 +55,7 @@ ssh -p <port> localuser@<address>
 
 for example:
 ```
-ssh -p 12316 localuser@services-uscentral.skytap.com
+ssh -p 20660 localuser@services-uscentral.skytap.com
 ```
 
 For Windows use putty

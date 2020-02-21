@@ -17,20 +17,6 @@ In parallel you connect to a managed cluster via SSH with credentials: localuser
 <tr><td>managed-cluster VM</td><td><b>localuser</b></td><td><b>passw0rd</b></td></tr>
 </table>
 
-## Connecting to the IBM CloudPak for Multicloud Management Hub
-
-To access the Hub cluster open a browser on your workstation and point it to:
-
-**Group A**
-
-<a href="https://icp-console.apps.169.61.23.248.nip.io" target="_blank">https://icp-console.apps.169.61.23.248.nip.io</a>
-
-**Group B**
-
-<a href="https://icp-console.icamfs2020-6550a99fb8cff23207ccecc2183787a9-0001.us-south.containers.appdomain.cloud" target="_blank">https://icp-console.icamfs2020-6550a99fb8cff23207ccecc2183787a9-0001.us-south.containers.appdomain.cloud</a>
-
-
-**ATTENTION: Lab tutorials were tested with Firefox browser.**
 
 ## Connecting to the managed cluster
 
@@ -62,17 +48,28 @@ For Windows use putty
 
 ![](images/2020-01-20-15-25-41.png)
 
-## Copying files between your local workstation and managed-cluster
+Upon successful login to your managed cluster run the following command to find out which Hub userid you are assigned
 
-When you need to copy any file between your local workstation and managed-cluster in Skytap, use the following:
-
-For Mac and  Linux
 ```
-scp -P <port> <source-file> localuser@services-uscentral.skytap.com:<target-path>
+cat /home/localuser/README
 ```
 
-For Windows use WinSCP or equivalent tool
+The output should look like:
 
+```
+You are assigned userX with password XXXX
+```
+
+## Connecting to the IBM CloudPak for Multicloud Management Hub
+
+To access the Hub cluster open a browser on your workstation and point it to:
+
+
+<a href="https://icp-console.apps.169.61.23.248.nip.io" target="_blank">https://icp-console.apps.169.61.23.248.nip.io</a>
+
+Login with the credentials from the previous step
+
+**ATTENTION: Lab tutorials were tested with Firefox browser.**
 
 [Go back to the Table of Contents](../../README.md)
 

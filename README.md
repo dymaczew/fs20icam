@@ -14,7 +14,7 @@ The following tutorials are needed for each lab session using the Skytap based m
 
 [Adding a managed cluster](./LabGuides/Exercise1/README.md)
 
-[Install k8s monitor to the managed cluster](./LabGuides/Exercise2/README.md)
+[Install k8s monitor to the managed cluster](./LabGuides/Exercise2a/README.md)
 
 [Installing the Bookinfo app into your managed cluster](./LabGuides/Exercise3/README.md)
 

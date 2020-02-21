@@ -6,11 +6,13 @@ In this exercise, you will be instrumenting your managed cluster with the kubern
 
 ### 1. Verify the user id you are assigned
 
+In the terminal window where you are connected to the managed cluster run the following command:
+
 ```
 cat /home/localuser/README
 ```
 
-### 2. In the terminal window where you are connected to managed cluster run the following commands, adjusting the **cluster_name** value
+### 2. Install the k8monitor using Ansible command, adjusting the **cluster_name** value
    
 <span style="color:red">**ATTENTION: Remember to change the cluster_name in the command!**</span>
 

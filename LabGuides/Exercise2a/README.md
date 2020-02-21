@@ -32,7 +32,7 @@ PLAY RECAP *********************************************************************
 
 You have now completed the installation of the kubernetes data collector
 
-If the Ansible playbook failed, read the instructions for step 8 again. Run the script ```/home/localuser/scripts/uninstall-k8smonitor.sh```. Then, correct the command and run it again.
+If the Ansible playbook failed, read the instructions for step 2 again. Run the script ```/home/localuser/scripts/uninstall-k8smonitor.sh```. Then, correct the command and run it again.
 
 ### 3. Verify that the K8Monitor is running
 ```

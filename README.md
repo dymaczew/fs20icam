@@ -1,12 +1,8 @@
-# Tutorials for FastStart 2020 ICAM Labs
-
-The following tutorials were created for use during FastStart 2020 events. For later access look at [ibm.com/demos](https://www.ibm.com/demos)
-
-
+# IBM CloudPak for Multicloud Management Labs - Monitoring applications in managed clusters
 
 Please provide any feedback via the Event mobile app or via mail/slack to the lab author
 
-## General tutorials (for both lab sessions)
+## Tutorials for "Monitoring of applications deployed to remote clusters"
 
 The following tutorials are needed for each lab session using the Skytap based managed cluster environments. You are supposed to follow the guide in sequence, completeing the following exercises:
 
@@ -14,13 +10,13 @@ The following tutorials are needed for each lab session using the Skytap based m
 
 [Adding a managed cluster](./LabGuides/Exercise1/README.md)
 
-[Install k8s monitor to the managed cluster](./LabGuides/Exercise2a/README.md)
+[Install k8s monitor to the managed cluster](./LabGuides/Exercise2/README.md)
 
 [Installing the Bookinfo app into your managed cluster](./LabGuides/Exercise3/README.md)
 
 [Installing and configuring a Synthetics PoP](./LabGuides/Exercise4/README.md)
 
-## Tutorials for session "Application management for 2nd day operations"
+## Tutorials for "Application management for 2nd day operations"
 
 [Instrumenting a new microservice using Appsody](./LabGuides/Exercise5/README.md)
 
@@ -32,7 +28,7 @@ The following tutorials are needed for each lab session using the Skytap based m
 
 [Exploring Integrations](./LabGuides/Exercise11/README.md)
 
-## Tutorials for session "App and infrastructure management using Golden Signals and AIOps"
+## Tutorials for "App and infrastructure management using Golden Signals and AIOps"
 
 Testing with Selenium demo
 

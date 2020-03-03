@@ -48,18 +48,6 @@ For Windows use putty
 
 ![](images/2020-01-20-15-25-41.png)
 
-Upon successful login to your managed cluster run the following command to find out which Hub userid you are assigned
-
-```
-cat /home/localuser/README
-```
-
-The output should look like:
-
-```
-You are assigned userX with password XXXX
-```
-
 ## Connecting to the IBM CloudPak for Multicloud Management Hub
 
 To access the Hub cluster open a browser on your workstation and point it to:

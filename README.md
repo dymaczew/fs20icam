@@ -1,6 +1,6 @@
-# IBM CloudPak for Multicloud Management Labs - Monitoring applications in managed clusters
+<h1>IBM CloudPak for Multicloud Management Labs<br>Monitoring applications in managed clusters</h1>
 
-Please provide any feedback via the Event mobile app or via mail/slack to the lab author
+Please provide any feedback mail/slack to the lab author
 
 ## Tutorials for "Monitoring of applications deployed to remote clusters"
 
